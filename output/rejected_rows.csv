@@ -1,0 +1,869 @@
+table,row_index,severity,reason,source_file
+profitandloss,12,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,24,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,37,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,46,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,59,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,60,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,61,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,62,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,63,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,64,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,65,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,66,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,67,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,68,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,69,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,70,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,71,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,72,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,85,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,96,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,98,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,111,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,124,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,132,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,145,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,158,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,171,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,184,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,195,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,208,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,221,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,234,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,247,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,260,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,273,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,286,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,299,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,312,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,325,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,338,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,351,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,364,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,377,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,390,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,403,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,416,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,429,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,442,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,455,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,468,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,481,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,485,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,494,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,507,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,520,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,532,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,545,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,558,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,571,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,584,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,597,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,610,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,623,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,636,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,647,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,660,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,673,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,686,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,689,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,702,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,715,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,728,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,735,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,748,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,761,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,774,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,787,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,800,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,813,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,826,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,839,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,852,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,865,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,878,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,891,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,904,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,917,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,930,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,943,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,956,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,969,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,982,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,986,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,995,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,1008,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,1033,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,1046,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,1059,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,1072,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,1085,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,1098,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,1111,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,1124,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,1137,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,1150,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,1163,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,1176,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,1189,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,1202,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,1215,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,1228,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,1241,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,1249,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,1262,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+profitandloss,1275,CRITICAL,"Null primary key value: ['company_id', 'year']",profitandloss.xlsx
+balancesheet,12,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,24,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,37,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,46,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,59,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,72,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,85,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,98,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,111,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,112,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,113,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,114,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,115,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,116,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,117,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,118,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,119,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,120,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,121,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,122,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,123,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,124,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,132,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,157,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,170,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,183,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,194,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,219,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,232,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,245,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,258,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,271,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,284,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,309,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,322,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,335,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,348,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,361,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,374,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,387,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,400,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,413,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,426,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,439,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,452,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,462,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,475,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,488,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,513,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,525,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,538,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,551,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,576,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,589,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,602,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,627,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,640,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,651,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,664,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,677,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,690,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,703,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,716,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,729,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,742,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,755,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,768,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,781,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,794,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,807,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,820,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,827,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,852,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,865,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,868,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,881,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,894,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,907,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,920,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,921,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,922,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,923,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,924,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,925,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,926,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,927,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,928,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,929,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,930,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,931,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,932,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,933,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,934,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,935,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,936,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,937,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,938,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,939,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,940,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,941,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,942,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,943,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,944,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,945,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,946,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,947,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,948,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,949,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,950,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,951,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,952,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,953,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,954,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,955,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,956,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,957,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,958,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,959,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,960,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,961,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,962,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,963,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,964,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,965,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,966,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,967,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,980,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,981,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,982,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,983,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,984,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,985,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,986,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,987,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,988,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,989,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,990,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,991,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,992,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,993,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1006,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1019,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1032,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1045,CRITICAL,"Null primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1058,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1066,CRITICAL,"Null primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1079,CRITICAL,"Null primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1092,CRITICAL,"Null primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1105,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1130,CRITICAL,"Null primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1155,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1168,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1181,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1194,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1207,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1220,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1233,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1246,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1259,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1272,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1273,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1274,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1275,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1276,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1277,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1278,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1279,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1280,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1281,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1282,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1283,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1284,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1285,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1298,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+balancesheet,1311,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",balancesheet.xlsx
+cashflow,24,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,25,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,26,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,27,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,28,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,29,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,30,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,31,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,32,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,33,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,34,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,157,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,158,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,159,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,160,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,161,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,162,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,163,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,164,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,165,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,166,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,167,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,168,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,1026,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,1027,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,1028,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,1029,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,1030,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,1031,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,1032,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,1033,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,1034,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,1035,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,1036,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+cashflow,1037,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",cashflow.xlsx
+financial_ratios,2,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,4,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,6,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,8,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,10,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,12,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,14,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,16,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,18,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,20,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,22,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,66,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,67,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,68,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,69,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,70,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,71,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,72,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,73,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,74,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,75,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,76,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,77,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,114,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,116,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,118,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,120,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,122,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,124,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,126,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,128,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,130,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,132,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,134,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,136,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,138,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,140,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,142,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,144,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,146,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,148,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,150,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,152,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,154,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,156,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,158,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,160,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,850,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,851,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,852,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,853,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,855,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,856,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,857,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,858,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,860,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,861,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,862,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,863,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,865,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,866,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,867,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,868,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,870,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,871,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,872,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,873,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,875,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,876,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,877,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,878,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,880,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,881,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,882,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,883,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,885,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,886,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,887,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,888,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,890,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,891,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,892,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,893,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,895,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,896,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,897,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,898,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,900,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,901,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,902,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,903,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,905,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,906,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,907,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,908,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,910,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,912,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,914,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,916,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,918,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,920,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,922,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,924,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,926,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,928,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,930,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,932,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,1077,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,1079,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,1081,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,1083,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,1085,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,1087,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,1089,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,1091,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,1093,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,1095,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,1097,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+financial_ratios,1099,CRITICAL,"Duplicate primary key value: ['company_id', 'year']",financial_ratios.xlsx
+profitandloss,1058,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1059,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1060,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1061,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1062,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1063,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1064,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1065,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1066,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1067,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1068,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1069,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1070,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1071,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1072,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1073,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1074,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1075,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1076,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1077,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1078,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1079,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1080,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1081,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1082,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1083,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1084,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1085,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1086,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1087,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1088,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1089,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1090,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1091,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1092,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1093,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1094,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1095,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1096,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1097,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1098,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1099,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1100,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1101,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1102,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1103,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1104,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1105,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1106,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1107,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1108,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1109,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1110,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1111,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1112,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1113,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1114,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1115,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1116,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1117,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1118,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1119,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1120,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1121,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1122,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1123,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1124,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1125,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1126,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1127,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1128,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1129,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1130,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1131,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1132,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1133,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1134,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1135,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1136,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1137,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1138,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1139,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1140,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1141,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1142,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1143,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1144,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1145,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1146,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1147,CRITICAL,company_id not found in companies,profitandloss.xlsx
+profitandloss,1148,CRITICAL,company_id not found in companies,profitandloss.xlsx
+balancesheet,890,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,891,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,892,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,893,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,894,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,895,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,896,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,897,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,898,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,899,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,900,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,901,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,914,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,915,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,916,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,917,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,918,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,919,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,920,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,921,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,922,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,923,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,924,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,925,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,926,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,927,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,928,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,929,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,930,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,931,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,932,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,933,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,934,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,935,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,936,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,937,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,938,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,939,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,940,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,941,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,942,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,943,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,944,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,969,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,970,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,971,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,972,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,973,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,974,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,975,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,976,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,977,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,978,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,979,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,980,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,981,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,982,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,983,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,984,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,985,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,986,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,987,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,988,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,989,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,990,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,991,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,992,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,1005,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,1006,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,1007,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,1008,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,1009,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,1010,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,1011,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,1012,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,1013,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,1014,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,1015,CRITICAL,company_id not found in companies,balancesheet.xlsx
+balancesheet,1016,CRITICAL,company_id not found in companies,balancesheet.xlsx
+cashflow,115,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,116,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,117,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,118,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,119,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,120,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,121,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1063,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1064,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1065,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1066,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1067,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1068,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1069,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1070,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1071,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1072,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1073,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1074,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1075,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1076,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1077,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1078,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1079,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1080,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1081,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1082,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1083,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1084,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1085,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1086,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1087,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1088,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1089,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1090,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1091,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1092,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1093,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1094,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1095,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1096,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1097,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1098,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1099,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1100,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1101,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1102,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1103,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1104,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1105,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1106,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1107,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1108,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1109,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1110,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1111,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1112,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1113,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1114,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1115,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1116,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1117,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1118,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1119,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1120,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1121,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1122,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1123,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1124,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1125,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1126,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1127,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1128,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1129,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1130,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1131,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1132,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1133,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1134,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1135,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1136,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1137,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1138,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1139,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1140,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1141,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1142,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1143,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1144,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1145,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1146,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1147,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1148,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1149,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1150,CRITICAL,company_id not found in companies,cashflow.xlsx
+cashflow,1151,CRITICAL,company_id not found in companies,cashflow.xlsx
+analysis,8,CRITICAL,company_id not found in companies,analysis.xlsx
+analysis,9,CRITICAL,company_id not found in companies,analysis.xlsx
+analysis,10,CRITICAL,company_id not found in companies,analysis.xlsx
+analysis,12,CRITICAL,company_id not found in companies,analysis.xlsx
+documents,1457,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1458,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1459,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1460,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1461,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1462,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1463,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1464,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1465,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1466,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1467,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1468,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1469,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1470,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1471,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1472,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1473,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1474,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1475,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1476,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1477,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1478,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1479,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1480,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1481,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1482,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1483,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1484,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1485,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1486,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1487,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1488,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1489,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1490,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1491,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1492,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1493,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1494,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1495,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1496,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1497,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1498,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1499,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1500,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1501,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1502,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1503,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1504,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1505,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1506,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1507,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1508,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1509,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1510,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1511,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1512,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1513,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1514,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1515,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1516,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1517,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1518,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1519,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1520,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1521,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1522,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1523,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1524,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1525,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1526,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1527,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1528,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1529,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1530,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1531,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1532,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1533,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1534,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1535,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1536,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1537,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1538,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1539,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1540,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1541,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1542,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1543,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1544,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1545,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1546,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1547,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1548,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1549,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1550,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1551,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1552,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1553,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1554,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1555,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1556,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1557,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1558,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1559,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1560,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1561,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1562,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1563,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1564,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1565,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1566,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1567,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1568,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1569,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1570,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1571,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1572,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1573,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1574,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1575,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1576,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1577,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1578,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1579,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1580,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1581,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1582,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1583,CRITICAL,company_id not found in companies,documents.xlsx
+documents,1584,CRITICAL,company_id not found in companies,documents.xlsx
+prosandcons,11,CRITICAL,company_id not found in companies,prosandcons.xlsx
+prosandcons,12,CRITICAL,company_id not found in companies,prosandcons.xlsx
+financial_ratios,1029,CRITICAL,company_id not found in companies,financial_ratios.xlsx
+financial_ratios,1030,CRITICAL,company_id not found in companies,financial_ratios.xlsx
+financial_ratios,1031,CRITICAL,company_id not found in companies,financial_ratios.xlsx
+financial_ratios,1032,CRITICAL,company_id not found in companies,financial_ratios.xlsx
+financial_ratios,1033,CRITICAL,company_id not found in companies,financial_ratios.xlsx
+financial_ratios,1034,CRITICAL,company_id not found in companies,financial_ratios.xlsx
+financial_ratios,1035,CRITICAL,company_id not found in companies,financial_ratios.xlsx
+financial_ratios,1036,CRITICAL,company_id not found in companies,financial_ratios.xlsx
+financial_ratios,1037,CRITICAL,company_id not found in companies,financial_ratios.xlsx
+financial_ratios,1038,CRITICAL,company_id not found in companies,financial_ratios.xlsx
+financial_ratios,1039,CRITICAL,company_id not found in companies,financial_ratios.xlsx
+financial_ratios,1040,CRITICAL,company_id not found in companies,financial_ratios.xlsx
+financial_ratios,1041,CRITICAL,company_id not found in companies,financial_ratios.xlsx
+financial_ratios,1042,CRITICAL,company_id not found in companies,financial_ratios.xlsx
+financial_ratios,1043,CRITICAL,company_id not found in companies,financial_ratios.xlsx
+financial_ratios,1044,CRITICAL,company_id not found in companies,financial_ratios.xlsx
+financial_ratios,1045,CRITICAL,company_id not found in companies,financial_ratios.xlsx
+financial_ratios,1046,CRITICAL,company_id not found in companies,financial_ratios.xlsx
+financial_ratios,1047,CRITICAL,company_id not found in companies,financial_ratios.xlsx
+financial_ratios,1048,CRITICAL,company_id not found in companies,financial_ratios.xlsx
+financial_ratios,1049,CRITICAL,company_id not found in companies,financial_ratios.xlsx
+financial_ratios,1050,CRITICAL,company_id not found in companies,financial_ratios.xlsx
+financial_ratios,1051,CRITICAL,company_id not found in companies,financial_ratios.xlsx
+financial_ratios,1052,CRITICAL,company_id not found in companies,financial_ratios.xlsx

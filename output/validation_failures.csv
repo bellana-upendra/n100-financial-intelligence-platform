@@ -1,0 +1,8 @@
+rule_id,severity,table,row_index,company_id,year,message
+DQ-06,WARNING,profitandloss,12.0,ADANIENSOL,2014.0,Sales must be positive
+DQ-11,WARNING,profitandloss,706.0,M&M,2020.0,EPS sign inconsistent with net profit
+DQ-11,WARNING,profitandloss,737.0,NAUKRI,2015.0,EPS sign inconsistent with net profit
+DQ-11,WARNING,profitandloss,963.0,TATAPOWER,2014.0,EPS sign inconsistent with net profit
+DQ-13,WARNING,profitandloss,,JIOFIN,,Only 2 years available
+DQ-13,WARNING,balancesheet,,JIOFIN,,Only 2 years available
+DQ-13,WARNING,cashflow,,JIOFIN,,Only 2 years available

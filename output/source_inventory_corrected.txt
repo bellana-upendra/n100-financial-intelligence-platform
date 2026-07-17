@@ -1,0 +1,143 @@
+FILE: analysis.xlsx
+SHEET: Analysis
+HEADER ROW: 1
+ROWS: 20
+COLUMNS: ['id', 'company_id', 'compounded_sales_growth', 'compounded_profit_growth', 'stock_price_cagr', 'roe']
+FIRST TWO RECORDS:
+ id company_id compounded_sales_growth compounded_profit_growth       stock_price_cagr                  roe
+  1   HDFCBANK           10 Years: 21%            10 Years: 22%      10 Years:     15%    10 Years:     17%
+ 10    SBILIFE      5 Years:       24%   5 Years:            6%      5 Years:       8% 5 Years          14%
+
+----------------------------------------------------------------------------------------------------
+
+FILE: balancesheet.xlsx
+SHEET: Balance Sheet
+HEADER ROW: 1
+ROWS: 1312
+COLUMNS: ['id', 'company_id', 'year', 'equity_capital', 'reserves', 'borrowings', 'other_liabilities', 'total_liabilities', 'fixed_assets', 'cwip', 'investments', 'other_asset', 'total_assets']
+FIRST TWO RECORDS:
+ id company_id     year  equity_capital  reserves  borrowings  other_liabilities  total_liabilities  fixed_assets  cwip  investments  other_asset  total_assets
+136        ABB Dec 2012            21.0       626           0                260                907           109     1            0          798           907
+137        ABB Mar 2014            21.0       767           0                351               1139            98     1            0         1040          1139
+
+----------------------------------------------------------------------------------------------------
+
+FILE: cashflow.xlsx
+SHEET: Cash Flow
+HEADER ROW: 1
+ROWS: 1187
+COLUMNS: ['id', 'company_id', 'year', 'operating_activity', 'investing_activity', 'financing_activity', 'net_cash_flow']
+FIRST TWO RECORDS:
+ id company_id   year  operating_activity  investing_activity  financing_activity  net_cash_flow
+ 37        TCS Mar-13             11615.0             -6038.0             -5729.0         -152.0
+ 38        TCS Mar-14             14751.0             -9452.0             -5673.0         -374.0
+
+----------------------------------------------------------------------------------------------------
+
+FILE: companies.xlsx
+SHEET: Companies
+HEADER ROW: 1
+ROWS: 92
+COLUMNS: ['id', 'company_logo', 'company_name', 'chart_link', 'about_company', 'website', 'nse_profile', 'bse_profile', 'face_value', 'book_value', 'roce_percentage', 'roe_percentage']
+FIRST TWO RECORDS:
+        id                                                                                                                                                                   company_logo               company_name                                                chart_link                                                                                                                                                                                                                                                    about_company                               website                                                  nse_profile                                                                              bse_profile  face_value  book_value  roce_percentage  roe_percentage
+       ABB                                                                                                                               https://mkt.in/static/mkt-icons/nifty100/ABB.png           Abbott India Ltd https://in.tradingview.com/chart/?symbol=NSE%3AABBOTINDIA                                                                                           Abbott India Ltd is one of the leading multinational pharmaceutical companies in India and sells its products through independent distributors primarily within India.             https://www.abbott.co.in/ https://www.nseindia.com/get-quotes/equity?symbol=ABBOTINDIA           https://www.bseindia.com/stock-share-price/abbott-india-ltd/ABBOTINDIA/500488/        10.0      1657.0             46.0           34.90
+ADANIENSOL https://m.economictimes.com/thumb/msid-117371599,width-1200,height-900,resizemode-4,imgsize-5642/the-growth-story-remains-intact-for-adani-energy-solutions-says-jefferies.jpg Adani Energy Solutions Ltd https://in.tradingview.com/chart/?symbol=NSE%3AADANIENSOL AESL, part of the Adani portfolio, is a multidimensional organization with presence in various facets of the energy domain, namely power transmission, distribution, smart metering, and cooling solutions. AESL is India's largest private transmission company https://www.adanienergysolutions.com/ https://www.nseindia.com/get-quotes/equity?symbol=ADANIENSOL https://www.bseindia.com/stock-share-price/adani-energy-solutions-ltd/ADANIENSOL/539254/        10.0       175.0              9.0            8.59
+
+----------------------------------------------------------------------------------------------------
+
+FILE: documents.xlsx
+SHEET: Documents
+HEADER ROW: 1
+ROWS: 1585
+COLUMNS: ['id', 'company_id', 'Year', 'Annual_Report']
+FIRST TWO RECORDS:
+ id company_id  Year                                                                                    Annual_Report
+  1        ABB  2024  https://www.bseindia.com/xml-data/corpfiling/AttachHis/270738a5-1a37-4f0f-9de6-e16dc27ff432.pdf
+  2        ABB  2023 https://www.bseindia.com/xml-data/corpfiling/AttachHis//68827cf7-67af-4209-91f5-3854d3e1e8a2.pdf
+
+----------------------------------------------------------------------------------------------------
+
+FILE: profitandloss.xlsx
+SHEET: Profit & Loss
+HEADER ROW: 1
+ROWS: 1276
+COLUMNS: ['id', 'company_id', 'year', 'sales', 'expenses', 'operating_profit', 'opm_percentage', 'other_income', 'interest', 'depreciation', 'profit_before_tax', 'tax_percentage', 'net_profit', 'eps', 'dividend_payout']
+FIRST TWO RECORDS:
+ id company_id     year  sales  expenses  operating_profit  opm_percentage  other_income  interest  depreciation  profit_before_tax  tax_percentage  net_profit  eps  dividend_payout
+ 61        ABB Dec 2012   1653      1451             202.0            12.0            33         0            19                215            33.0         145 68.0             25.0
+ 62        ABB Mar 2014   2276      2009             267.0            12.0            49         0            22                295            33.0         198 93.0             25.0
+
+----------------------------------------------------------------------------------------------------
+
+FILE: prosandcons.xlsx
+SHEET: Pros & Cons
+HEADER ROW: 1
+ROWS: 16
+COLUMNS: ['id', 'company_id', 'pros', 'cons']
+FIRST TWO RECORDS:
+ id company_id                                                                     pros                                          cons
+  1   HDFCBANK                                 Company is expected to give good quarter Stock is trading at 2.76 times its book value
+  2   HDFCBANK Company has delivered good profit growth of 23.4% CAGR over last 5 years      Company has low interest coverage ratio.
+
+----------------------------------------------------------------------------------------------------
+
+FILE: financial_ratios.xlsx
+SHEET: Sheet1
+HEADER ROW: 0
+ROWS: 1184
+COLUMNS: ['id', 'company_id', 'year', 'net_profit_margin_pct', 'operating_profit_margin_pct', 'return_on_equity_pct', 'debt_to_equity', 'interest_coverage', 'asset_turnover', 'free_cash_flow_cr', 'capex_cr', 'earnings_per_share', 'book_value_per_share', 'dividend_payout_ratio_pct', 'total_debt_cr', 'cash_from_operations_cr']
+FIRST TWO RECORDS:
+ id company_id     year  net_profit_margin_pct  operating_profit_margin_pct  return_on_equity_pct  debt_to_equity  interest_coverage  asset_turnover  free_cash_flow_cr  capex_cr  earnings_per_share  book_value_per_share  dividend_payout_ratio_pct  total_debt_cr  cash_from_operations_cr
+  1        ABB Dec 2012                   8.77                         12.0                 22.41             0.0                NaN          1.8225               42.0      59.0                68.0                3.0810                       25.0              0                    101.0
+  2        ABB Mar 2014                   8.70                         12.0                 25.13             0.0                NaN          1.9982               11.0     144.0                93.0                3.7524                       25.0              0                    155.0
+
+----------------------------------------------------------------------------------------------------
+
+FILE: market_cap.xlsx
+SHEET: Sheet1
+HEADER ROW: 0
+ROWS: 552
+COLUMNS: ['id', 'company_id', 'year', 'market_cap_crore', 'enterprise_value_crore', 'pe_ratio', 'pb_ratio', 'ev_ebitda', 'dividend_yield_pct']
+FIRST TWO RECORDS:
+ id company_id  year  market_cap_crore  enterprise_value_crore  pe_ratio  pb_ratio  ev_ebitda  dividend_yield_pct
+  1        ABB  2019         844312.98               814410.48     19.29     14.26      22.84                0.84
+  2        ABB  2020         923674.33              1120679.72     67.54     13.03      24.93                3.90
+
+----------------------------------------------------------------------------------------------------
+
+FILE: peer_groups.xlsx
+SHEET: Sheet1
+HEADER ROW: 0
+ROWS: 56
+COLUMNS: ['id', 'peer_group_name', 'company_id', 'is_benchmark']
+FIRST TWO RECORDS:
+ id peer_group_name company_id  is_benchmark
+  1   Private Banks   HDFCBANK          True
+  2   Private Banks  ICICIBANK         False
+
+----------------------------------------------------------------------------------------------------
+
+FILE: sectors.xlsx
+SHEET: Sheet1
+HEADER ROW: 0
+ROWS: 92
+COLUMNS: ['id', 'company_id', 'broad_sector', 'sub_sector', 'index_weight_pct', 'market_cap_category']
+FIRST TWO RECORDS:
+ id company_id broad_sector        sub_sector  index_weight_pct market_cap_category
+  1        ABB  Industrials     Capital Goods              0.81           Large Cap
+  2 ADANIENSOL       Energy Power & Utilities              0.65           Large Cap
+
+----------------------------------------------------------------------------------------------------
+
+FILE: stock_prices.xlsx
+SHEET: Sheet1
+HEADER ROW: 0
+ROWS: 5520
+COLUMNS: ['id', 'company_id', 'date', 'open_price', 'high_price', 'low_price', 'close_price', 'volume', 'adjusted_close']
+FIRST TWO RECORDS:
+ id company_id       date  open_price  high_price  low_price  close_price   volume  adjusted_close
+  1        ABB 2020-01-01     1958.61     2150.53    1835.28      1964.30 26184368         1964.30
+  2        ABB 2020-02-01     2177.03     2192.92    1931.08      2165.21  1668316         2165.21
+
+----------------------------------------------------------------------------------------------------

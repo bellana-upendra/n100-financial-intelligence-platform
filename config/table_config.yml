@@ -1,0 +1,104 @@
+sources:
+  - file: companies.xlsx
+    type: excel
+    mappings:
+      - sheet: Companies
+        header: 1
+        table: companies
+        rename:
+          id: company_id
+
+  - file: sectors.xlsx
+    type: excel
+    mappings:
+      - sheet: Sheet1
+        header: 0
+        table: sectors
+        rename:
+          broad_sector: sector_name
+
+  - file: profitandloss.xlsx
+    type: excel
+    mappings:
+      - sheet: Profit & Loss
+        header: 1
+        table: profitandloss
+        rename: {}
+
+  - file: balancesheet.xlsx
+    type: excel
+    mappings:
+      - sheet: Balance Sheet
+        header: 1
+        table: balancesheet
+        rename: {}
+
+  - file: cashflow.xlsx
+    type: excel
+    mappings:
+      - sheet: Cash Flow
+        header: 1
+        table: cashflow
+        rename: {}
+
+  - file: analysis.xlsx
+    type: excel
+    mappings:
+      - sheet: Analysis
+        header: 1
+        table: analysis
+        rename: {}
+
+  - file: documents.xlsx
+    type: excel
+    mappings:
+      - sheet: Documents
+        header: 1
+        table: documents
+        rename:
+          Year: year
+          Annual_Report: annual_report
+
+  - file: prosandcons.xlsx
+    type: excel
+    mappings:
+      - sheet: Pros & Cons
+        header: 1
+        table: prosandcons
+        rename: {}
+
+  - file: stock_prices.xlsx
+    type: excel
+    mappings:
+      - sheet: Sheet1
+        header: 0
+        table: stock_prices
+        rename:
+          open_price: open
+          high_price: high
+          low_price: low
+          close_price: close
+
+  - file: financial_ratios.xlsx
+    type: excel
+    mappings:
+      - sheet: Sheet1
+        header: 0
+        table: financial_ratios
+        rename: {}
+
+  - file: peer_groups.xlsx
+    type: excel
+    mappings:
+      - sheet: Sheet1
+        header: 0
+        table: peer_groups
+        rename: {}
+
+  - file: market_cap.xlsx
+    type: excel
+    mappings:
+      - sheet: Sheet1
+        header: 0
+        table: market_cap
+        rename: {}

@@ -1,0 +1,47 @@
+# Python virtual environment
+.venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Test coverage
+.coverage
+htmlcov/
+
+# Environment variables
+.env
+
+# Jupyter temporary files
+.ipynb_checkpoints/
+
+# Runtime logs
+logs/*.log
+
+# Root working database
+# The final database is retained under data/processed/
+nifty100.db
+
+# Processed data
+data/processed/*
+!data/processed/.gitkeep
+!data/processed/nifty100.db
+
+# Generated output reports
+output/*
+!output/.gitkeep
+!output/load_audit.csv
+!output/rejected_rows.csv
+!output/validation_failures.csv
+!output/source_inventory_corrected.txt
+!output/manual_review.md
+
+# SQLite temporary files
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Operating-system files
+.DS_Store
+Thumbs.db
