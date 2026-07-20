@@ -176,3 +176,51 @@ db/schema.sql
 tests/etl/test_normaliser.py
 notebooks/exploratory_queries.sql
 ```
+
+---
+
+## Sprint 2 — Financial Ratio Engine
+
+### Completed Work
+
+- Processed all 92 N100 companies
+- Generated 1,073 valid company-year ratio records
+- Populated 55 financial-ratio and supporting columns
+- Implemented profitability, leverage and efficiency ratios
+- Implemented Revenue, PAT and EPS CAGR for 3Y, 5Y and 10Y
+- Implemented cash-flow quality and capital-allocation classification
+- Applied the Financials-sector leverage carve-out
+- Generated screener and edge-case outputs
+
+### Verification
+
+- KPI tests: 36 passed
+- Complete project tests: 71 passed
+- Manual ROE and Revenue CAGR checks: 3 passed
+- Screener results: 38 companies
+- Foreign-key violations: 0
+- Critical validation failures: 0
+
+### Source Data Notes
+
+- The source contains 1,073 valid unique company-year combinations instead of the stated 1,100+.
+- The supplied sector file classifies 23 companies as Financials instead of 19.
+- BEL's extreme computed ROE matches the supplied equity values and is documented as a source-data issue.
+- No duplicate or synthetic records were introduced.
+
+### Sprint 2 Deliverables
+
+- `src/analytics/ratios.py`
+- `src/analytics/cagr.py`
+- `src/analytics/cashflow_kpis.py`
+- `src/analytics/engine.py`
+- `tests/kpi/`
+- `output/capital_allocation.csv`
+- `output/ratio_edge_cases.log`
+- `output/screener_preview.csv`
+- `output/manual_ratio_spot_check.csv`
+- `output/sprint2_retrospective.md`
+
+### Status
+
+Sprint 2 technical implementation completed and submitted for review.

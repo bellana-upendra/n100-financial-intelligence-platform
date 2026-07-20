@@ -45,3 +45,9 @@ output/*
 # Operating-system files
 .DS_Store
 Thumbs.db
+
+# SQLite databases and backups
+*.db
+*.db-journal
+*.db-wal
+*.db-shm

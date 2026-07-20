@@ -1,0 +1,45 @@
+============================= test session starts =============================
+platform win32 -- Python 3.14.6, pytest-9.1.1, pluggy-1.6.0 -- C:\Users\BELLANA UPENDRA\OneDrive\All\N100_Sprint1_Data_Foundation_Starter\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\BELLANA UPENDRA\OneDrive\All\N100_Sprint1_Data_Foundation_Starter
+plugins: anyio-4.14.2, cov-7.1.0, typeguard-4.5.2
+collecting ... collected 36 items
+
+tests/kpi/test_cagr.py::test_normal_five_year_cagr PASSED                [  2%]
+tests/kpi/test_cagr.py::test_normal_three_year_cagr PASSED               [  5%]
+tests/kpi/test_cagr.py::test_positive_value_declining_to_zero PASSED     [  8%]
+tests/kpi/test_cagr.py::test_decline_to_loss PASSED                      [ 11%]
+tests/kpi/test_cagr.py::test_turnaround PASSED                           [ 13%]
+tests/kpi/test_cagr.py::test_both_values_negative PASSED                 [ 16%]
+tests/kpi/test_cagr.py::test_zero_base PASSED                            [ 19%]
+tests/kpi/test_cagr.py::test_insufficient_history PASSED                 [ 22%]
+tests/kpi/test_cagr.py::test_missing_start_value PASSED                  [ 25%]
+tests/kpi/test_cagr.py::test_missing_end_value PASSED                    [ 27%]
+tests/kpi/test_cashflow_kpis.py::test_free_cash_flow_positive PASSED     [ 30%]
+tests/kpi/test_cashflow_kpis.py::test_negative_free_cash_flow_is_allowed PASSED [ 33%]
+tests/kpi/test_cashflow_kpis.py::test_cfo_pat_zero_pat_returns_none PASSED [ 36%]
+tests/kpi/test_cashflow_kpis.py::test_five_year_average_cfo_pat_ratio PASSED [ 38%]
+tests/kpi/test_cashflow_kpis.py::test_cfo_quality_labels PASSED          [ 41%]
+tests/kpi/test_cashflow_kpis.py::test_capital_expenditure_absolute_value PASSED [ 44%]
+tests/kpi/test_cashflow_kpis.py::test_capex_intensity_and_labels PASSED  [ 47%]
+tests/kpi/test_cashflow_kpis.py::test_fcf_conversion_zero_operating_profit PASSED [ 50%]
+tests/kpi/test_cashflow_kpis.py::test_reinvestor_and_shareholder_returns PASSED [ 52%]
+tests/kpi/test_cashflow_kpis.py::test_remaining_capital_allocation_patterns PASSED [ 55%]
+tests/kpi/test_ratios.py::test_net_profit_margin_normal PASSED           [ 58%]
+tests/kpi/test_ratios.py::test_net_profit_margin_zero_sales PASSED       [ 61%]
+tests/kpi/test_ratios.py::test_operating_profit_margin_normal PASSED     [ 63%]
+tests/kpi/test_ratios.py::test_opm_difference_over_one_percent_is_mismatch PASSED [ 66%]
+tests/kpi/test_ratios.py::test_return_on_equity_normal PASSED            [ 69%]
+tests/kpi/test_ratios.py::test_return_on_equity_negative_equity PASSED   [ 72%]
+tests/kpi/test_ratios.py::test_return_on_capital_employed_normal PASSED  [ 75%]
+tests/kpi/test_ratios.py::test_return_on_assets_zero_assets PASSED       [ 77%]
+tests/kpi/test_ratios.py::test_debt_to_equity_debt_free_returns_zero PASSED [ 80%]
+tests/kpi/test_ratios.py::test_debt_to_equity_normal PASSED              [ 83%]
+tests/kpi/test_ratios.py::test_high_leverage_flag_for_non_financial_company PASSED [ 86%]
+tests/kpi/test_ratios.py::test_high_leverage_suppressed_for_financials PASSED [ 88%]
+tests/kpi/test_ratios.py::test_interest_coverage_zero_interest_returns_none PASSED [ 91%]
+tests/kpi/test_ratios.py::test_icr_label_for_debt_free_company PASSED    [ 94%]
+tests/kpi/test_ratios.py::test_low_interest_coverage_warning PASSED      [ 97%]
+tests/kpi/test_ratios.py::test_net_debt_and_asset_turnover PASSED        [100%]
+
+============================= 36 passed in 0.05s ==============================

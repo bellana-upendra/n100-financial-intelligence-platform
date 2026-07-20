@@ -31,7 +31,10 @@ def get_settings() -> Settings:
         raw_data_dir=resolve("RAW_DATA_DIR", "data/raw"),
         processed_data_dir=resolve("PROCESSED_DATA_DIR", "data/processed"),
         output_dir=resolve("OUTPUT_DIR", "output"),
-        database_path=resolve("DATABASE_PATH", "nifty100.db"),
+        database_path=resolve(
+            "DATABASE_PATH",
+            "data/processed/nifty100.db",
+        ),
         config_path=resolve("CONFIG_PATH", "config/table_config.yml"),
         log_level=os.getenv("LOG_LEVEL", "INFO").upper(),
     )

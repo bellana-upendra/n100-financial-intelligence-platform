@@ -1,0 +1,256 @@
+company_id=ADANIENSOL | year=2024 | metric=OPM | computed=34.3891 | source=30.0000 | difference=4.3891 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=AXISBANK | year=2013 | metric=OPM | computed=30.5816 | source=1353.0000 | difference=1322.4184 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=AXISBANK | year=2014 | metric=OPM | computed=31.4742 | source=2307.0000 | difference=2275.5258 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=AXISBANK | year=2015 | metric=OPM | computed=31.3622 | source=3097.0000 | difference=3065.6378 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=AXISBANK | year=2016 | metric=OPM | computed=32.6120 | source=3466.0000 | difference=3433.3880 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=AXISBANK | year=2017 | metric=OPM | computed=53.4507 | source=-5715.0000 | difference=5768.4507 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=AXISBANK | year=2018 | metric=OPM | computed=63.1171 | source=-10277.0000 | difference=10340.1171 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=AXISBANK | year=2019 | metric=OPM | computed=49.3853 | source=-5447.0000 | difference=5496.3853 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=AXISBANK | year=2020 | metric=OPM | computed=55.9847 | source=-9859.0000 | difference=9914.9847 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=AXISBANK | year=2021 | metric=OPM | computed=50.1200 | source=-2510.0000 | difference=2560.1200 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=AXISBANK | year=2022 | metric=OPM | computed=44.4692 | source=3170.0000 | difference=3125.5308 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=AXISBANK | year=2023 | metric=OPM | computed=34.1565 | source=13857.0000 | difference=13822.8435 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=AXISBANK | year=2024 | metric=OPM | computed=34.6926 | source=11952.0000 | difference=11917.3074 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=BAJFINANCE | year=2015 | metric=OPM | computed=32.4926 | source=1367.0000 | difference=1334.5074 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=BAJFINANCE | year=2016 | metric=OPM | computed=32.2510 | source=1986.0000 | difference=1953.7490 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=BAJFINANCE | year=2017 | metric=OPM | computed=32.5978 | source=2867.0000 | difference=2834.4022 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=BAJFINANCE | year=2018 | metric=OPM | computed=32.2846 | source=3935.0000 | difference=3902.7154 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=BAJFINANCE | year=2019 | metric=OPM | computed=29.5018 | source=6310.0000 | difference=6280.4982 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=BAJFINANCE | year=2020 | metric=OPM | computed=34.7274 | source=7608.0000 | difference=7573.2726 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=BAJFINANCE | year=2021 | metric=OPM | computed=40.6366 | source=6314.0000 | difference=6273.3634 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=BAJFINANCE | year=2022 | metric=OPM | computed=37.5462 | source=9906.0000 | difference=9868.4538 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=BAJFINANCE | year=2023 | metric=OPM | computed=30.6513 | source=16018.0000 | difference=15987.3487 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=BAJFINANCE | year=2024 | metric=OPM | computed=29.2858 | source=19987.0000 | difference=19957.7142 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=BANKBARODA | year=2013 | metric=OPM | computed=30.0477 | source=1006.0000 | difference=975.9523 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=BANKBARODA | year=2014 | metric=OPM | computed=29.7778 | source=809.0000 | difference=779.2222 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=BANKBARODA | year=2015 | metric=OPM | computed=29.9811 | source=902.0000 | difference=872.0189 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=BANKBARODA | year=2016 | metric=OPM | computed=55.4401 | source=-11700.0000 | difference=11755.4401 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=BANKBARODA | year=2017 | metric=OPM | computed=43.2847 | source=-4372.0000 | difference=4415.2847 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=BANKBARODA | year=2018 | metric=OPM | computed=56.6549 | source=-9197.0000 | difference=9253.6549 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=BANKBARODA | year=2019 | metric=OPM | computed=48.7941 | source=-5414.0000 | difference=5462.7941 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=BANKBARODA | year=2020 | metric=OPM | computed=51.4393 | source=-11728.0000 | difference=11779.4393 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=BANKBARODA | year=2021 | metric=OPM | computed=51.2286 | source=-6957.0000 | difference=7008.2286 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=BANKBARODA | year=2022 | metric=OPM | computed=51.1249 | source=-2948.0000 | difference=2999.1249 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=BANKBARODA | year=2023 | metric=OPM | computed=40.4548 | source=6329.0000 | difference=6288.5452 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=BANKBARODA | year=2024 | metric=OPM | computed=37.4889 | source=4102.0000 | difference=4064.5111 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CANBK | year=2013 | metric=OPM | computed=21.1829 | source=655.0000 | difference=633.8171 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CANBK | year=2014 | metric=OPM | computed=24.3518 | source=-672.0000 | difference=696.3518 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CANBK | year=2015 | metric=OPM | computed=23.5136 | source=-621.0000 | difference=644.5136 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CANBK | year=2016 | metric=OPM | computed=40.3847 | source=-8008.0000 | difference=8048.3847 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CANBK | year=2017 | metric=OPM | computed=37.8489 | source=-5775.0000 | difference=5812.8489 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CANBK | year=2018 | metric=OPM | computed=61.8745 | source=-13350.0000 | difference=13411.8745 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CANBK | year=2019 | metric=OPM | computed=56.7287 | source=-11590.0000 | difference=11646.7287 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CANBK | year=2020 | metric=OPM | computed=53.8777 | source=-12867.0000 | difference=12920.8777 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CANBK | year=2021 | metric=OPM | computed=61.8294 | source=-18367.0000 | difference=18428.8294 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CANBK | year=2022 | metric=OPM | computed=58.3949 | source=-13657.0000 | difference=13715.3949 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CANBK | year=2023 | metric=OPM | computed=49.8015 | source=-9877.0000 | difference=9926.8015 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CANBK | year=2024 | metric=OPM | computed=41.7539 | source=-7745.0000 | difference=7786.7539 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CHOLAFIN | year=2013 | metric=OPM | computed=26.7704 | source=472.0000 | difference=445.2296 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CHOLAFIN | year=2014 | metric=OPM | computed=28.4233 | source=578.0000 | difference=549.5767 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CHOLAFIN | year=2015 | metric=OPM | computed=28.5599 | source=696.0000 | difference=667.4401 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CHOLAFIN | year=2016 | metric=OPM | computed=30.0427 | source=899.0000 | difference=868.9573 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CHOLAFIN | year=2017 | metric=OPM | computed=28.1636 | source=1143.0000 | difference=1114.8364 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CHOLAFIN | year=2018 | metric=OPM | computed=26.1018 | source=1451.0000 | difference=1424.8982 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CHOLAFIN | year=2019 | metric=OPM | computed=22.9600 | source=1888.0000 | difference=1865.0400 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CHOLAFIN | year=2020 | metric=OPM | computed=27.7893 | source=1699.0000 | difference=1671.2107 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CHOLAFIN | year=2021 | metric=OPM | computed=30.3976 | source=2094.0000 | difference=2063.6024 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CHOLAFIN | year=2022 | metric=OPM | computed=28.8333 | source=2924.0000 | difference=2895.1667 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CHOLAFIN | year=2023 | metric=OPM | computed=28.1046 | source=3515.0000 | difference=3486.8954 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CHOLAFIN | year=2024 | metric=OPM | computed=28.1010 | source=4548.0000 | difference=4519.8990 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CIPLA | year=2013 | metric=OPM | computed=73.2576 | source=2214.0000 | difference=2140.7424 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CIPLA | year=2014 | metric=OPM | computed=78.8951 | source=2147.0000 | difference=2068.1049 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CIPLA | year=2015 | metric=OPM | computed=80.9431 | source=2163.0000 | difference=2082.0569 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CIPLA | year=2016 | metric=OPM | computed=82.0160 | source=2480.0000 | difference=2397.9840 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CIPLA | year=2017 | metric=OPM | computed=82.6594 | source=2496.0000 | difference=2413.3406 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CIPLA | year=2018 | metric=OPM | computed=81.3473 | source=2826.0000 | difference=2744.6527 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CIPLA | year=2019 | metric=OPM | computed=81.0720 | source=3097.0000 | difference=3015.9280 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CIPLA | year=2020 | metric=OPM | computed=81.2865 | source=3206.0000 | difference=3124.7135 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CIPLA | year=2021 | metric=OPM | computed=77.8027 | source=4252.0000 | difference=4174.1973 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CIPLA | year=2022 | metric=OPM | computed=79.0838 | source=4553.0000 | difference=4473.9162 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CIPLA | year=2023 | metric=OPM | computed=77.9062 | source=5027.0000 | difference=4949.0938 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=CIPLA | year=2024 | metric=OPM | computed=75.5917 | source=6291.0000 | difference=6215.4083 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=COALINDIA | year=2013 | metric=OPM | computed=73.5195 | source=18087.0000 | difference=18013.4805 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=COALINDIA | year=2014 | metric=OPM | computed=74.8385 | source=17766.0000 | difference=17691.1615 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=COALINDIA | year=2015 | metric=OPM | computed=76.6015 | source=17343.0000 | difference=17266.3985 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=COALINDIA | year=2016 | metric=OPM | computed=75.9649 | source=18714.0000 | difference=18638.0351 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=COALINDIA | year=2017 | metric=OPM | computed=84.0745 | source=12448.0000 | difference=12363.9255 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=COALINDIA | year=2018 | metric=OPM | computed=89.1042 | source=9288.0000 | difference=9198.8958 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=COALINDIA | year=2019 | metric=OPM | computed=74.8890 | source=25007.0000 | difference=24932.1110 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=COALINDIA | year=2020 | metric=OPM | computed=77.5396 | source=21581.0000 | difference=21503.4604 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=COALINDIA | year=2021 | metric=OPM | computed=79.3082 | source=18628.0000 | difference=18548.6918 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=COALINDIA | year=2022 | metric=OPM | computed=77.4689 | source=24721.0000 | difference=24643.5311 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=COALINDIA | year=2023 | metric=OPM | computed=68.0062 | source=44232.0000 | difference=44163.9938 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=COALINDIA | year=2024 | metric=OPM | computed=66.2938 | source=47971.0000 | difference=47904.7062 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HDFCBANK | year=2013 | metric=OPM | computed=35.2221 | source=3534.0000 | difference=3498.7779 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HDFCBANK | year=2014 | metric=OPM | computed=31.7425 | source=5602.0000 | difference=5570.2575 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HDFCBANK | year=2015 | metric=OPM | computed=31.9031 | source=7214.0000 | difference=7182.0969 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HDFCBANK | year=2016 | metric=OPM | computed=31.7517 | source=9037.0000 | difference=9005.2483 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HDFCBANK | year=2017 | metric=OPM | computed=32.5586 | source=11374.0000 | difference=11341.4414 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HDFCBANK | year=2018 | metric=OPM | computed=34.6262 | source=13374.0000 | difference=13339.3738 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HDFCBANK | year=2019 | metric=OPM | computed=33.1454 | source=16592.0000 | difference=16558.8546 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HDFCBANK | year=2020 | metric=OPM | computed=37.2038 | source=14593.0000 | difference=14555.7962 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HDFCBANK | year=2021 | metric=OPM | computed=40.8061 | source=16848.0000 | difference=16807.1939 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HDFCBANK | year=2022 | metric=OPM | computed=41.6056 | source=20795.0000 | difference=20753.3944 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HDFCBANK | year=2023 | metric=OPM | computed=36.9198 | source=29932.0000 | difference=29895.0802 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HDFCBANK | year=2024 | metric=OPM | computed=61.4125 | source=-44685.0000 | difference=44746.4125 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HDFCLIFE | year=2013 | metric=OPM | computed=96.2660 | source=525.0000 | difference=428.7340 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HDFCLIFE | year=2014 | metric=OPM | computed=96.4756 | source=605.0000 | difference=508.5244 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HDFCLIFE | year=2015 | metric=OPM | computed=96.7885 | source=874.0000 | difference=777.2115 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HDFCLIFE | year=2016 | metric=OPM | computed=94.7412 | source=953.0000 | difference=858.2588 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HDFCLIFE | year=2017 | metric=OPM | computed=96.8251 | source=972.0000 | difference=875.1749 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HDFCLIFE | year=2018 | metric=OPM | computed=96.6708 | source=1074.0000 | difference=977.3292 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HDFCLIFE | year=2019 | metric=OPM | computed=96.8730 | source=1215.0000 | difference=1118.1270 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HDFCLIFE | year=2020 | metric=OPM | computed=96.1164 | source=1141.0000 | difference=1044.8836 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HDFCLIFE | year=2021 | metric=OPM | computed=98.2748 | source=1235.0000 | difference=1136.7252 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HDFCLIFE | year=2022 | metric=OPM | computed=98.8410 | source=778.0000 | difference=679.1590 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HDFCLIFE | year=2023 | metric=OPM | computed=99.8861 | source=80.0000 | difference=19.8861 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HDFCLIFE | year=2024 | metric=OPM | computed=99.4768 | source=531.0000 | difference=431.5232 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HEROMOTOCO | year=2014 | metric=OPM | computed=85.9426 | source=3553.0000 | difference=3467.0574 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HEROMOTOCO | year=2015 | metric=OPM | computed=87.2177 | source=3520.0000 | difference=3432.7823 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HEROMOTOCO | year=2016 | metric=OPM | computed=84.4537 | source=4424.0000 | difference=4339.5463 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HEROMOTOCO | year=2017 | metric=OPM | computed=83.9741 | source=4585.0000 | difference=4501.0259 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HEROMOTOCO | year=2018 | metric=OPM | computed=83.5665 | source=5334.0000 | difference=5250.4335 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HEROMOTOCO | year=2019 | metric=OPM | computed=85.2080 | source=5025.0000 | difference=4939.7920 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HEROMOTOCO | year=2020 | metric=OPM | computed=86.0874 | source=4070.0000 | difference=3983.9126 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HEROMOTOCO | year=2021 | metric=OPM | computed=86.8956 | source=4058.0000 | difference=3971.1044 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HEROMOTOCO | year=2022 | metric=OPM | computed=88.9818 | source=3256.0000 | difference=3167.0182 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HEROMOTOCO | year=2023 | metric=OPM | computed=88.0028 | source=4099.0000 | difference=4010.9972 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HEROMOTOCO | year=2024 | metric=OPM | computed=86.1468 | source=5235.0000 | difference=5148.8532 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HINDALCO | year=2013 | metric=OPM | computed=90.3994 | source=7699.0000 | difference=7608.6006 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HINDALCO | year=2014 | metric=OPM | computed=90.8501 | source=8024.0000 | difference=7933.1499 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HINDALCO | year=2015 | metric=OPM | computed=91.5191 | source=8844.0000 | difference=8752.4809 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HINDALCO | year=2016 | metric=OPM | computed=92.1243 | source=7778.0000 | difference=7685.8757 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HINDALCO | year=2017 | metric=OPM | computed=87.7056 | source=12317.0000 | difference=12229.2944 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HINDALCO | year=2018 | metric=OPM | computed=88.1102 | source=13695.0000 | difference=13606.8898 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HINDALCO | year=2019 | metric=OPM | computed=88.1180 | source=15511.0000 | difference=15422.8820 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HINDALCO | year=2020 | metric=OPM | computed=87.8910 | source=14306.0000 | difference=14218.1090 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HINDALCO | year=2021 | metric=OPM | computed=86.6985 | source=17559.0000 | difference=17472.3015 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HINDALCO | year=2022 | metric=OPM | computed=85.4675 | source=28347.0000 | difference=28261.5325 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HINDALCO | year=2023 | metric=OPM | computed=89.8451 | source=22666.0000 | difference=22576.1549 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HINDALCO | year=2024 | metric=OPM | computed=88.9462 | source=23872.0000 | difference=23783.0538 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HINDUNILVR | year=2013 | metric=OPM | computed=84.3727 | source=4220.0000 | difference=4135.6273 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HINDUNILVR | year=2014 | metric=OPM | computed=83.7210 | source=4759.0000 | difference=4675.2790 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HINDUNILVR | year=2015 | metric=OPM | computed=83.0727 | source=5412.0000 | difference=5328.9273 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HINDUNILVR | year=2016 | metric=OPM | computed=81.6380 | source=5910.0000 | difference=5828.3620 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HINDUNILVR | year=2017 | metric=OPM | computed=80.9179 | source=6328.0000 | difference=6247.0821 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HINDUNILVR | year=2018 | metric=OPM | computed=78.9028 | source=7499.0000 | difference=7420.0972 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HINDUNILVR | year=2019 | metric=OPM | computed=77.4103 | source=8880.0000 | difference=8802.5897 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HINDUNILVR | year=2020 | metric=OPM | computed=75.2130 | source=9861.0000 | difference=9785.7870 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HINDUNILVR | year=2021 | metric=OPM | computed=75.2786 | source=11626.0000 | difference=11550.7214 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HINDUNILVR | year=2022 | metric=OPM | computed=75.4853 | source=12857.0000 | difference=12781.5147 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HINDUNILVR | year=2023 | metric=OPM | computed=76.6474 | source=14147.0000 | difference=14070.3526 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HINDUNILVR | year=2024 | metric=OPM | computed=76.3167 | source=14659.0000 | difference=14582.6833 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIBANK | year=2013 | metric=OPM | computed=70.5893 | source=-15085.0000 | difference=15155.5893 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIBANK | year=2014 | metric=OPM | computed=66.3958 | source=-13084.0000 | difference=13150.3958 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIBANK | year=2015 | metric=OPM | computed=70.5298 | source=-16120.0000 | difference=16190.5298 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIBANK | year=2016 | metric=OPM | computed=88.1236 | source=-26955.0000 | difference=27043.1236 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIBANK | year=2017 | metric=OPM | computed=104.7604 | source=-37737.0000 | difference=37841.7604 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIBANK | year=2018 | metric=OPM | computed=117.1230 | source=-44906.0000 | difference=45023.1230 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIBANK | year=2019 | metric=OPM | computed=116.3833 | source=-50971.0000 | difference=51087.3833 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIBANK | year=2020 | metric=OPM | computed=100.6188 | source=-45190.0000 | difference=45290.6188 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIBANK | year=2021 | metric=OPM | computed=102.4068 | source=-44805.0000 | difference=44907.4068 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIBANK | year=2022 | metric=OPM | computed=84.6877 | source=-26558.0000 | difference=26642.6877 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIBANK | year=2023 | metric=OPM | computed=72.5747 | source=-17341.0000 | difference=17413.5747 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIBANK | year=2024 | metric=OPM | computed=62.4138 | source=-14152.0000 | difference=14214.4138 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIGI | year=2013 | metric=OPM | computed=104.4616 | source=-178.0000 | difference=282.4616 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIGI | year=2014 | metric=OPM | computed=105.1930 | source=-225.0000 | difference=330.1930 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIGI | year=2015 | metric=OPM | computed=105.2433 | source=-221.0000 | difference=326.2433 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIGI | year=2016 | metric=OPM | computed=87.3363 | source=764.0000 | difference=676.6637 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIGI | year=2017 | metric=OPM | computed=87.7793 | source=919.0000 | difference=831.2207 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIGI | year=2018 | metric=OPM | computed=103.7905 | source=-262.0000 | difference=365.7905 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIGI | year=2019 | metric=OPM | computed=85.0488 | source=1669.0000 | difference=1583.9512 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIGI | year=2020 | metric=OPM | computed=84.6140 | source=1772.0000 | difference=1687.3860 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIGI | year=2021 | metric=OPM | computed=82.9702 | source=2072.0000 | difference=1989.0298 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIGI | year=2022 | metric=OPM | computed=93.6603 | source=1016.0000 | difference=922.3397 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIGI | year=2023 | metric=OPM | computed=92.9291 | source=1264.0000 | difference=1171.0709 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIGI | year=2024 | metric=OPM | computed=87.4213 | source=2577.0000 | difference=2489.5787 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIPRULI | year=2013 | metric=OPM | computed=96.2797 | source=745.0000 | difference=648.7203 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIPRULI | year=2014 | metric=OPM | computed=93.1287 | source=1504.0000 | difference=1410.8713 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIPRULI | year=2015 | metric=OPM | computed=95.1964 | source=1655.0000 | difference=1559.8036 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIPRULI | year=2016 | metric=OPM | computed=91.1698 | source=1842.0000 | difference=1750.8302 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIPRULI | year=2017 | metric=OPM | computed=95.2242 | source=1806.0000 | difference=1710.7758 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIPRULI | year=2018 | metric=OPM | computed=95.4419 | source=1771.0000 | difference=1675.5581 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIPRULI | year=2019 | metric=OPM | computed=98.6952 | source=541.0000 | difference=442.3048 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIPRULI | year=2020 | metric=OPM | computed=101.5172 | source=-319.0000 | difference=420.5172 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIPRULI | year=2021 | metric=OPM | computed=100.4689 | source=-390.0000 | difference=490.4689 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIPRULI | year=2022 | metric=OPM | computed=103.4044 | source=-2163.0000 | difference=2266.4044 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIPRULI | year=2023 | metric=OPM | computed=103.4807 | source=-1757.0000 | difference=1860.4807 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=ICICIPRULI | year=2024 | metric=OPM | computed=102.0253 | source=-1829.0000 | difference=1931.0253 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=INDUSINDBK | year=2013 | metric=OPM | computed=27.8820 | source=286.0000 | difference=258.1180 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=INDUSINDBK | year=2014 | metric=OPM | computed=30.9547 | source=335.0000 | difference=304.0453 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=INDUSINDBK | year=2015 | metric=OPM | computed=32.3256 | source=288.0000 | difference=255.6744 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=INDUSINDBK | year=2016 | metric=OPM | computed=35.2763 | source=329.0000 | difference=293.7237 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=INDUSINDBK | year=2017 | metric=OPM | computed=39.4558 | source=379.0000 | difference=339.5442 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=INDUSINDBK | year=2018 | metric=OPM | computed=37.9318 | source=942.0000 | difference=904.0682 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=INDUSINDBK | year=2019 | metric=OPM | computed=41.7007 | source=-437.0000 | difference=478.7007 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=INDUSINDBK | year=2020 | metric=OPM | computed=43.8141 | source=-553.0000 | difference=596.8141 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=INDUSINDBK | year=2021 | metric=OPM | computed=55.1621 | source=-2469.0000 | difference=2524.1621 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=INDUSINDBK | year=2022 | metric=OPM | computed=51.3919 | source=-839.0000 | difference=890.3919 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=INDUSINDBK | year=2023 | metric=OPM | computed=42.6886 | source=2067.0000 | difference=2024.3114 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=INDUSINDBK | year=2024 | metric=OPM | computed=38.5547 | source=2978.0000 | difference=2939.4453 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=JIOFIN | year=2023 | metric=OPM | computed=86.6667 | source=88.0000 | difference=1.3333 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=KOTAKBANK | year=2013 | metric=OPM | computed=60.9245 | source=-1789.0000 | difference=1849.9245 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=KOTAKBANK | year=2014 | metric=OPM | computed=58.8437 | source=-1379.0000 | difference=1437.8437 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=KOTAKBANK | year=2015 | metric=OPM | computed=72.9634 | source=-3366.0000 | difference=3438.9634 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=KOTAKBANK | year=2016 | metric=OPM | computed=56.5680 | source=-2263.0000 | difference=2319.5680 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=KOTAKBANK | year=2017 | metric=OPM | computed=66.4397 | source=-3965.0000 | difference=4031.4397 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=KOTAKBANK | year=2018 | metric=OPM | computed=66.8696 | source=-4141.0000 | difference=4207.8696 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=KOTAKBANK | year=2019 | metric=OPM | computed=66.2331 | source=-5114.0000 | difference=5180.2331 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=KOTAKBANK | year=2020 | metric=OPM | computed=67.4494 | source=-5005.0000 | difference=5072.4494 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=KOTAKBANK | year=2021 | metric=OPM | computed=90.8349 | source=-9958.0000 | difference=10048.8349 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=KOTAKBANK | year=2022 | metric=OPM | computed=90.9843 | source=-8512.0000 | difference=8602.9843 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=KOTAKBANK | year=2023 | metric=OPM | computed=79.4406 | source=-5746.0000 | difference=5825.4406 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=KOTAKBANK | year=2024 | metric=OPM | computed=83.6673 | source=-13382.0000 | difference=13465.6673 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=SUNPHARMA | year=2024 | metric=OPM | computed=26.8429 | source=28.0000 | difference=1.1571 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=INDIGO | year=2013 | metric=OPM | computed=90.7096 | source=855.0000 | difference=764.2904 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=INDIGO | year=2014 | metric=OPM | computed=96.1051 | source=433.0000 | difference=336.8949 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=INDIGO | year=2015 | metric=OPM | computed=86.3339 | source=1904.0000 | difference=1817.6661 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=INDIGO | year=2016 | metric=OPM | computed=80.3965 | source=3164.0000 | difference=3083.6035 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=INDIGO | year=2017 | metric=OPM | computed=88.0624 | source=2219.0000 | difference=2130.9376 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=INDIGO | year=2018 | metric=OPM | computed=86.8381 | source=3030.0000 | difference=2943.1619 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=INDIGO | year=2019 | metric=OPM | computed=100.5299 | source=-151.0000 | difference=251.5299 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=INDIGO | year=2020 | metric=OPM | computed=88.6201 | source=4069.0000 | difference=3980.3799 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=INDIGO | year=2021 | metric=OPM | computed=99.9795 | source=2.0000 | difference=97.9795 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=INDIGO | year=2022 | metric=OPM | computed=97.8481 | source=558.0000 | difference=460.1519 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=INDIGO | year=2023 | metric=OPM | computed=88.0248 | source=6521.0000 | difference=6432.9752 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=INDIGO | year=2024 | metric=OPM | computed=76.2989 | source=16331.0000 | difference=16254.7011 | category=formula discrepancy | explanation=OPM difference exceeds 1%
+company_id=HAL | year=2024 | metric=ROE | computed=3816.5829 | source=28.9000 | difference=3787.6829 | category=data source issue | explanation=Computed ROE is used for analytics; source ROE is retained for display and comparison only
+company_id=HAL | year=2024 | metric=ROCE | computed=3180.7453 | source=38.9000 | difference=3141.8453 | category=formula discrepancy | explanation=Computed ROCE uses EBIT divided by equity capital, reserves and borrowings
+company_id=ICICIPRULI | year=2024 | metric=ROCE | computed=32.7571 | source=8.7500 | difference=24.0071 | category=formula discrepancy | explanation=Computed ROCE uses EBIT divided by equity capital, reserves and borrowings
+company_id=ADANIGREEN | year=2024 | metric=ROCE | computed=8.9394 | source=96.5000 | difference=87.5606 | category=formula discrepancy | explanation=Computed ROCE uses EBIT divided by equity capital, reserves and borrowings
+company_id=TRENT | year=2024 | metric=ROE | computed=36.3078 | source=27.2000 | difference=9.1078 | category=data source issue | explanation=Computed ROE is used for analytics; source ROE is retained for display and comparison only
+company_id=TRENT | year=2024 | metric=ROCE | computed=39.3231 | source=23.8000 | difference=15.5231 | category=formula discrepancy | explanation=Computed ROCE uses EBIT divided by equity capital, reserves and borrowings
+company_id=ADANIENT | year=2024 | metric=ROE | computed=8.5347 | source=13.6400 | difference=5.1053 | category=data source issue | explanation=Computed ROE is used for analytics; source ROE is retained for display and comparison only
+company_id=INDIGO | year=2024 | metric=ROCE | computed=1112.5536 | source=24.5000 | difference=1088.0536 | category=formula discrepancy | explanation=Computed ROCE uses EBIT divided by equity capital, reserves and borrowings
+company_id=BPCL | year=2024 | metric=ROE | computed=35.5113 | source=41.9000 | difference=6.3887 | category=data source issue | explanation=Computed ROE is used for analytics; source ROE is retained for display and comparison only
+company_id=BOSCHLTD | year=2024 | metric=ROCE | computed=26.7041 | source=20.6000 | difference=6.1041 | category=formula discrepancy | explanation=Computed ROCE uses EBIT divided by equity capital, reserves and borrowings
+company_id=TATASTEEL | year=2024 | metric=ROE | computed=-5.3349 | source=6.5500 | difference=11.8849 | category=data source issue | explanation=Computed ROE is used for analytics; source ROE is retained for display and comparison only
+company_id=CHOLAFIN | year=2024 | metric=ROCE | computed=3.1545 | source=10.4000 | difference=7.2455 | category=formula discrepancy | explanation=Computed ROCE uses EBIT divided by equity capital, reserves and borrowings
+company_id=COALINDIA | year=2024 | metric=ROE | computed=45.1698 | source=52.0000 | difference=6.8302 | category=data source issue | explanation=Computed ROE is used for analytics; source ROE is retained for display and comparison only
+company_id=BEL | year=2024 | metric=ROE | computed=4744.0476 | source=26.3000 | difference=4717.7476 | category=data source issue | explanation=Computed ROE is used for analytics; source ROE is retained for display and comparison only
+company_id=BEL | year=2024 | metric=ROCE | computed=4155.9055 | source=34.6000 | difference=4121.3055 | category=formula discrepancy | explanation=Computed ROCE uses EBIT divided by equity capital, reserves and borrowings
+company_id=TATAMOTORS | year=2024 | metric=ROE | computed=37.4561 | source=49.4000 | difference=11.9439 | category=data source issue | explanation=Computed ROE is used for analytics; source ROE is retained for display and comparison only
+company_id=LICI | year=2024 | metric=ROE | computed=49.4471 | source=63.6100 | difference=14.1629 | category=data source issue | explanation=Computed ROE is used for analytics; source ROE is retained for display and comparison only
+company_id=LICI | year=2024 | metric=ROCE | computed=56.9712 | source=63.7900 | difference=6.8188 | category=formula discrepancy | explanation=Computed ROCE uses EBIT divided by equity capital, reserves and borrowings
+company_id=IRCTC | year=2024 | metric=ROE | computed=34.3963 | source=40.4000 | difference=6.0037 | category=data source issue | explanation=Computed ROE is used for analytics; source ROE is retained for display and comparison only
+company_id=IRCTC | year=2024 | metric=ROCE | computed=46.0486 | source=53.8000 | difference=7.7514 | category=formula discrepancy | explanation=Computed ROCE uses EBIT divided by equity capital, reserves and borrowings
+company_id=GODREJCP | year=2024 | metric=ROE | computed=-4.4531 | source=6.7700 | difference=11.2231 | category=data source issue | explanation=Computed ROE is used for analytics; source ROE is retained for display and comparison only
+company_id=GODREJCP | year=2024 | metric=ROCE | computed=3.2111 | source=26.4900 | difference=23.2789 | category=formula discrepancy | explanation=Computed ROCE uses EBIT divided by equity capital, reserves and borrowings
+company_id=PNB | year=2024 | metric=ROE | computed=61.3206 | source=8.7000 | difference=52.6206 | category=data source issue | explanation=Computed ROE is used for analytics; source ROE is retained for display and comparison only
+company_id=PNB | year=2024 | metric=ROCE | computed=118.2187 | source=1.6300 | difference=116.5887 | category=formula discrepancy | explanation=Computed ROCE uses EBIT divided by equity capital, reserves and borrowings
+company_id=BAJAJFINSV | year=2024 | metric=ROE | computed=25.8504 | source=11.7200 | difference=14.1304 | category=data source issue | explanation=Computed ROE is used for analytics; source ROE is retained for display and comparison only
+company_id=BAJAJFINSV | year=2024 | metric=ROCE | computed=11.4476 | source=21.1400 | difference=9.6924 | category=formula discrepancy | explanation=Computed ROCE uses EBIT divided by equity capital, reserves and borrowings
+company_id=LT | year=2024 | metric=ROE | computed=77.6651 | source=10.4900 | difference=67.1751 | category=data source issue | explanation=Computed ROE is used for analytics; source ROE is retained for display and comparison only
+company_id=LT | year=2024 | metric=ROCE | computed=135.9455 | source=17.1800 | difference=118.7655 | category=formula discrepancy | explanation=Computed ROCE uses EBIT divided by equity capital, reserves and borrowings
+company_id=LTIM | year=2024 | metric=ROCE | computed=28.3897 | source=34.1000 | difference=5.7103 | category=formula discrepancy | explanation=Computed ROCE uses EBIT divided by equity capital, reserves and borrowings
+company_id=M&M | year=2024 | metric=ROCE | computed=13.4216 | source=26.9800 | difference=13.5584 | category=formula discrepancy | explanation=Computed ROCE uses EBIT divided by equity capital, reserves and borrowings
+company_id=BAJFINANCE | year=2024 | metric=ROCE | computed=5.2199 | source=11.9000 | difference=6.6801 | category=formula discrepancy | explanation=Computed ROCE uses EBIT divided by equity capital, reserves and borrowings
+company_id=TCS | year=2024 | metric=ROE | computed=50.9443 | source=0.5200 | difference=50.4243 | category=data source issue | explanation=Computed ROE is used for analytics; source ROE is retained for display and comparison only
+company_id=ADANIPOWER | year=2024 | metric=ROE | computed=48.2767 | source=57.1000 | difference=8.8233 | category=data source issue | explanation=Computed ROE is used for analytics; source ROE is retained for display and comparison only
+company_id=PFC | year=2024 | metric=ROE | computed=26.1609 | source=19.4900 | difference=6.6709 | category=data source issue | explanation=Computed ROE is used for analytics; source ROE is retained for display and comparison only
+company_id=ASIANPAINT | year=2024 | metric=ROCE | computed=35.6240 | source=41.7500 | difference=6.1260 | category=formula discrepancy | explanation=Computed ROCE uses EBIT divided by equity capital, reserves and borrowings
+company_id=NESTLEIND | year=2024 | metric=ROE | computed=117.7545 | source=135.6100 | difference=17.8555 | category=data source issue | explanation=Computed ROE is used for analytics; source ROE is retained for display and comparison only
+company_id=NESTLEIND | year=2024 | metric=ROCE | computed=147.4627 | source=185.4300 | difference=37.9673 | category=formula discrepancy | explanation=Computed ROCE uses EBIT divided by equity capital, reserves and borrowings
+metric=capital_allocation | insufficient_rows=19 | category=data source issue | explanation=Cash-flow values are missing for these company-year records; no artificial capital-allocation pattern was assigned
+metric=financial_ratios_row_count | expected=>=1100 | available_unique_company_years=1073 | category=data source issue | explanation=No duplicate or synthetic rows inserted
+metric=financial_sector_company_count | requirement_count=19 | source_count=23 | category=version difference | explanation=Source sector classifications retained

@@ -1,0 +1,6 @@
+Sprint 2 Ratio Engine Summary
+Financial ratio rows: 1073
+Companies represented: 92
+Financial-ratio columns: 55
+Screener result count: 38
+Edge-case log entries: 256
