@@ -133,3 +133,5 @@ websocket-client==1.9.0
 widgetsnbextension==4.0.15
 win32_setctime==1.2.0
 xlrd==2.0.2
+streamlit
+plotly
