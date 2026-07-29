@@ -17,7 +17,7 @@ def generate_recommendations():
 
     df = ranking.merge(risk, on="company_id", how="left")
 
-    print(df.columns.tolist())
+    
 
     # Rename actual risk score
     if "risk_score_y" in df.columns:
