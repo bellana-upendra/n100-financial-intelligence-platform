@@ -67,7 +67,7 @@ for row in reports.itertuples():
     year_col, action_col = st.columns([1, 4])
     year_col.markdown(f"### {year}")
     if state == "available":
-        action_col.link_button(f"Open {year} Annual Report", url, use_container_width=True)
+        action_col.link_button(f"Open {year} Annual Report", url, width="stretch")
     elif state == "unavailable":
         action_col.error(f"Report unavailable (HTTP {status or 404})")
     else:

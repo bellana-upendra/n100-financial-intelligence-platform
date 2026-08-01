@@ -98,7 +98,7 @@ fig.update_layout(
     showlegend=True,
     margin=dict(l=45, r=45, t=70, b=45),
 )
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, width="stretch")
 
 st.subheader("Peer KPI Table")
 columns = [
@@ -123,4 +123,4 @@ table = data[columns].rename(
 def highlight(row):
     return ["background-color: #ffe69c" if bool(row.get("Benchmark", False)) else "" for _ in row]
 
-st.dataframe(table.style.apply(highlight, axis=1), use_container_width=True, hide_index=True)
+st.dataframe(table.style.apply(highlight, axis=1), width="stretch", hide_index=True)

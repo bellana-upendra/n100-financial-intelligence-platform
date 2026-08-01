@@ -705,7 +705,7 @@ with left:
         title="Sector Breakdown",
     )
     fig.update_layout(margin=dict(l=10, r=10, t=55, b=10))
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 
 with right:
     st.subheader("Top 5 by Composite Quality Score")
@@ -726,7 +726,7 @@ with right:
             "composite_quality_score": "Quality Score",
         }
     )
-    st.dataframe(display, use_container_width=True, hide_index=True)
+    st.dataframe(display, width="stretch", hide_index=True)
 
 missing_ratio = int(data["return_on_equity_pct"].isna().sum())
 if missing_ratio:
@@ -838,7 +838,7 @@ else:
         barmode="group",
         title="Revenue and Net Profit — Latest 10 Years",
     )
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 
 trend = ratios.sort_values("year").drop_duplicates("year", keep="last").tail(10)
 if not trend.empty:
@@ -867,7 +867,7 @@ if not trend.empty:
         yaxis2=dict(title="ROCE (%)", overlaying="y", side="right"),
         legend=dict(orientation="h"),
     )
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 else:
     st.info("ROE and ROCE history are unavailable.")
 
@@ -962,12 +962,12 @@ st.session_state.setdefault("active_preset", "Custom")
 st.sidebar.markdown("### Presets")
 button_cols = st.sidebar.columns(2)
 for index, (preset_name, values) in enumerate(PRESETS.items()):
-    if button_cols[index % 2].button(preset_name, use_container_width=True, key=f"preset_{preset_name}"):
+    if button_cols[index % 2].button(preset_name, width="stretch", key=f"preset_{preset_name}"):
         for key, value in values.items():
             st.session_state[key] = value
         st.session_state["active_preset"] = preset_name
         st.rerun()
-if st.sidebar.button("Reset", use_container_width=True):
+if st.sidebar.button("Reset", width="stretch"):
     for key, value in DEFAULTS.items():
         st.session_state[key] = value
     st.session_state["active_preset"] = "Custom"
@@ -1040,7 +1040,7 @@ visible = results[
 if visible.empty:
     st.warning("No companies match the selected filters.")
 else:
-    st.dataframe(visible, use_container_width=True, hide_index=True, height=520)
+    st.dataframe(visible, width="stretch", hide_index=True, height=520)
 
 csv_data = visible.to_csv(index=False).encode("utf-8-sig")
 st.download_button(
@@ -1146,7 +1146,7 @@ fig.update_layout(
     showlegend=True,
     margin=dict(l=45, r=45, t=70, b=45),
 )
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, width="stretch")
 
 st.subheader("Peer KPI Table")
 columns = [
@@ -1171,7 +1171,7 @@ table = data[columns].rename(
 def highlight(row):
     return ["background-color: #ffe69c" if bool(row.get("Benchmark", False)) else "" for _ in row]
 
-st.dataframe(table.style.apply(highlight, axis=1), use_container_width=True, hide_index=True)
+st.dataframe(table.style.apply(highlight, axis=1), width="stretch", hide_index=True)
 '''
 
 TRENDS_PY = PAGE_COMMON_HEADER + r'''
@@ -1322,7 +1322,7 @@ fig.update_layout(
     hovermode="x unified",
     margin=dict(l=25, r=25, t=65, b=25),
 )
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, width="stretch")
 if data["year"].nunique() < 10:
     st.info(f"Only {data['year'].nunique()} years of combined data are available for this company.")
 '''
@@ -1366,7 +1366,7 @@ else:
         title=f"{sector}: Revenue vs ROE ({year})",
         labels={"sales": "Revenue (₹ Cr)", "return_on_equity_pct": "ROE (%)"},
     )
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 
 if (data["market_cap_crore"] > 0).any():
     data["fcf_yield_pct"] = data["free_cash_flow_cr"] / data["market_cap_crore"] * 100
@@ -1399,7 +1399,7 @@ else:
         title=f"{sector} Median KPIs — {year}",
     )
     fig.update_layout(xaxis_tickangle=-25)
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 '''
 
 CAPITAL_PY = PAGE_COMMON_HEADER + r'''
@@ -1429,7 +1429,7 @@ fig = px.treemap(
     title="Nifty 100 Capital Allocation Patterns",
 )
 fig.update_layout(margin=dict(l=5, r=5, t=55, b=5))
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, width="stretch")
 
 patterns = sorted(data["capital_allocation_pattern"].dropna().unique().tolist())
 selected_pattern = st.selectbox(
@@ -1449,7 +1449,7 @@ st.dataframe(
             "market_cap_crore": "Market Cap ₹ Cr",
         }
     ),
-    use_container_width=True,
+    width="stretch",
     hide_index=True,
 )
 if "Unclassified" in patterns:
@@ -1520,7 +1520,7 @@ for row in reports.itertuples():
     year_col, action_col = st.columns([1, 4])
     year_col.markdown(f"### {year}")
     if state == "available":
-        action_col.link_button(f"Open {year} Annual Report", url, use_container_width=True)
+        action_col.link_button(f"Open {year} Annual Report", url, width="stretch")
     elif state == "unavailable":
         action_col.error(f"Report unavailable (HTTP {status or 404})")
     else:

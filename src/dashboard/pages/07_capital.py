@@ -31,7 +31,7 @@ fig = px.treemap(
     title="Nifty 100 Capital Allocation Patterns",
 )
 fig.update_layout(margin=dict(l=5, r=5, t=55, b=5))
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, width="stretch")
 
 patterns = sorted(data["capital_allocation_pattern"].dropna().unique().tolist())
 selected_pattern = st.selectbox(
@@ -51,7 +51,7 @@ st.dataframe(
             "market_cap_crore": "Market Cap ₹ Cr",
         }
     ),
-    use_container_width=True,
+    width="stretch",
     hide_index=True,
 )
 if "Unclassified" in patterns:

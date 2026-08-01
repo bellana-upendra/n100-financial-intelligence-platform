@@ -54,7 +54,7 @@ with left:
         title="Sector Breakdown",
     )
     fig.update_layout(margin=dict(l=10, r=10, t=55, b=10))
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 
 with right:
     st.subheader("Top 5 by Composite Quality Score")
@@ -75,7 +75,7 @@ with right:
             "composite_quality_score": "Quality Score",
         }
     )
-    st.dataframe(display, use_container_width=True, hide_index=True)
+    st.dataframe(display, width="stretch", hide_index=True)
 
 missing_ratio = int(data["return_on_equity_pct"].isna().sum())
 if missing_ratio:

@@ -152,6 +152,6 @@ fig.update_layout(
     hovermode="x unified",
     margin=dict(l=25, r=25, t=65, b=25),
 )
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, width="stretch")
 if data["year"].nunique() < 10:
     st.info(f"Only {data['year'].nunique()} years of combined data are available for this company.")

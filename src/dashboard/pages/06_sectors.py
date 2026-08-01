@@ -43,7 +43,7 @@ else:
         title=f"{sector}: Revenue vs ROE ({year})",
         labels={"sales": "Revenue (₹ Cr)", "return_on_equity_pct": "ROE (%)"},
     )
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 
 if (data["market_cap_crore"] > 0).any():
     data["fcf_yield_pct"] = data["free_cash_flow_cr"] / data["market_cap_crore"] * 100
@@ -76,4 +76,4 @@ else:
         title=f"{sector} Median KPIs — {year}",
     )
     fig.update_layout(xaxis_tickangle=-25)
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")

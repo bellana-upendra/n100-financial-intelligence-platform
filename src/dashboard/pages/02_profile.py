@@ -106,7 +106,7 @@ else:
         barmode="group",
         title="Revenue and Net Profit — Latest 10 Years",
     )
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 
 trend = ratios.sort_values("year").drop_duplicates("year", keep="last").tail(10)
 if not trend.empty:
@@ -135,7 +135,7 @@ if not trend.empty:
         yaxis2=dict(title="ROCE (%)", overlaying="y", side="right"),
         legend=dict(orientation="h"),
     )
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width="stretch")
 else:
     st.info("ROE and ROCE history are unavailable.")
 

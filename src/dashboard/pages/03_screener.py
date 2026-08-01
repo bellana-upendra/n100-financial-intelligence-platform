@@ -47,12 +47,12 @@ st.session_state.setdefault("active_preset", "Custom")
 st.sidebar.markdown("### Presets")
 button_cols = st.sidebar.columns(2)
 for index, (preset_name, values) in enumerate(PRESETS.items()):
-    if button_cols[index % 2].button(preset_name, use_container_width=True, key=f"preset_{preset_name}"):
+    if button_cols[index % 2].button(preset_name, width="stretch", key=f"preset_{preset_name}"):
         for key, value in values.items():
             st.session_state[key] = value
         st.session_state["active_preset"] = preset_name
         st.rerun()
-if st.sidebar.button("Reset", use_container_width=True):
+if st.sidebar.button("Reset", width="stretch"):
     for key, value in DEFAULTS.items():
         st.session_state[key] = value
     st.session_state["active_preset"] = "Custom"
@@ -125,7 +125,7 @@ visible = results[
 if visible.empty:
     st.warning("No companies match the selected filters.")
 else:
-    st.dataframe(visible, use_container_width=True, hide_index=True, height=520)
+    st.dataframe(visible, width="stretch", hide_index=True, height=520)
 
 csv_data = visible.to_csv(index=False).encode("utf-8-sig")
 st.download_button(
