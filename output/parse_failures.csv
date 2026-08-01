@@ -1,0 +1,18 @@
+company_id,metric_type,original_text,failure_reason
+HDFCBANK,compounded_profit_growth,TTM:                27%,regex_no_match
+HDFCBANK,compounded_sales_growth,TTM:            47%,regex_no_match
+HDFCBANK,roe,Last Year:    17%,regex_no_match
+INFY,compounded_profit_growth,TTM:                 8%,regex_no_match
+INFY,compounded_sales_growth,TTM:            3%,regex_no_match
+INFY,roe,Last Year:     32%,regex_no_match
+SBILIFE,compounded_profit_growth,TTM:                 18%,regex_no_match
+SBILIFE,compounded_sales_growth,TTM:            43%,regex_no_match
+SBILIFE,roe,Last Year:      12%,regex_no_match
+SBILIFE,stock_price_cagr,1 Year:         -2%,regex_no_match
+TCS,compounded_profit_growth,TTM:                 8%,regex_no_match
+TCS,compounded_sales_growth,TTM:            5%,regex_no_match
+TCS,roe,Last Year:       52%,regex_no_match
+WIPRO,compounded_profit_growth,TTM:                 1%,regex_no_match
+WIPRO,compounded_sales_growth,TTM:           -3%,regex_no_match
+WIPRO,roe,Last Year:       14%,regex_no_match
+WIPRO,stock_price_cagr,3 Years:      -1%,regex_no_match
