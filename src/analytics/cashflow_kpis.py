@@ -1342,6 +1342,241 @@ def run_cashflow_intelligence() -> tuple[pd.DataFrame, pd.DataFrame]:
     return intelligence, distress
 
 
+# BEGIN LEGACY CASH-FLOW KPI COMPATIBILITY HELPERS
+#
+# These public helpers preserve the API used by the existing KPI tests.
+# The Sprint 5 reporting pipeline continues to use the newer vectorised
+# functions elsewhere in this module.
+
+
+def _compat_finite_number(value: object) -> float | None:
+    "Return a finite float, otherwise None."
+
+    import math
+
+    if value is None:
+        return None
+
+    try:
+        number = float(value)
+    except (TypeError, ValueError):
+        return None
+
+    return number if math.isfinite(number) else None
+
+
+def free_cash_flow(
+    cash_from_operations: object,
+    capital_expenditure_cashflow: object,
+) -> float | None:
+    "Return CFO plus the raw capex cash-flow value."
+
+    cfo = _compat_finite_number(cash_from_operations)
+    capex = _compat_finite_number(capital_expenditure_cashflow)
+
+    if cfo is None or capex is None:
+        return None
+
+    return cfo + capex
+
+
+def cfo_pat_ratio(
+    cash_from_operations: object,
+    profit_after_tax: object,
+) -> float | None:
+    "Return CFO divided by PAT, or None for an invalid or zero PAT."
+
+    cfo = _compat_finite_number(cash_from_operations)
+    pat = _compat_finite_number(profit_after_tax)
+
+    if cfo is None or pat is None or abs(pat) < 1e-12:
+        return None
+
+    return cfo / pat
+
+
+def average_cfo_pat_ratio(
+    cash_from_operations_values: object,
+    profit_after_tax_values: object,
+) -> float | None:
+    "Return the mean of valid annual CFO/PAT ratios."
+
+    if cash_from_operations_values is None or profit_after_tax_values is None:
+        return None
+
+    try:
+        cfo_values = list(cash_from_operations_values)
+        pat_values = list(profit_after_tax_values)
+    except TypeError:
+        return None
+
+    if len(cfo_values) != len(pat_values):
+        raise ValueError(
+            "CFO and PAT sequences must contain the same number of values."
+        )
+
+    ratios = []
+
+    for cfo, pat in zip(cfo_values, pat_values):
+        ratio = cfo_pat_ratio(cfo, pat)
+
+        if ratio is not None:
+            ratios.append(ratio)
+
+    if not ratios:
+        return None
+
+    return sum(ratios) / len(ratios)
+
+
+def cfo_quality_label(score: object) -> str:
+    "Classify CFO/PAT quality using the original project thresholds."
+
+    value = _compat_finite_number(score)
+
+    if value is None:
+        return "Insufficient Data"
+
+    if value >= 1.0:
+        return "High Quality"
+
+    if value >= 0.5:
+        return "Moderate"
+
+    return "Accrual Risk"
+
+
+def capital_expenditure(value: object) -> float | None:
+    "Return capex as a positive absolute amount."
+
+    number = _compat_finite_number(value)
+
+    return None if number is None else abs(number)
+
+
+def capex_intensity(
+    capital_expenditure_cashflow: object,
+    revenue: object,
+) -> float | None:
+    "Return absolute capex as a percentage of absolute revenue."
+
+    capex = capital_expenditure(capital_expenditure_cashflow)
+    revenue_value = _compat_finite_number(revenue)
+
+    if (
+        capex is None
+        or revenue_value is None
+        or abs(revenue_value) < 1e-12
+    ):
+        return None
+
+    return capex / abs(revenue_value) * 100.0
+
+
+def capex_intensity_label(value: object) -> str:
+    "Classify capex intensity using the original project thresholds."
+
+    intensity = _compat_finite_number(value)
+
+    if intensity is None:
+        return "Insufficient Data"
+
+    if intensity < 5.0:
+        return "Asset Light"
+
+    if intensity < 10.0:
+        return "Moderate"
+
+    return "Capital Intensive"
+
+
+def fcf_conversion_rate(
+    free_cash_flow_value: object,
+    operating_profit: object,
+) -> float | None:
+    "Return FCF as a percentage of operating profit."
+
+    fcf = _compat_finite_number(free_cash_flow_value)
+    operating_profit_value = _compat_finite_number(operating_profit)
+
+    if (
+        fcf is None
+        or operating_profit_value is None
+        or abs(operating_profit_value) < 1e-12
+    ):
+        return None
+
+    return fcf / operating_profit_value * 100.0
+
+
+def capital_allocation_pattern(
+    cash_from_operations: object,
+    investing_cashflow: object,
+    financing_cashflow: object,
+    cfo_quality_score: object = None,
+) -> str:
+    "Classify the original cash-flow sign-pattern categories."
+
+    cfo = _compat_finite_number(cash_from_operations)
+    investing = _compat_finite_number(investing_cashflow)
+    financing = _compat_finite_number(financing_cashflow)
+    quality = _compat_finite_number(cfo_quality_score)
+
+    if cfo is None or investing is None or financing is None:
+        return "Insufficient Data"
+
+    cfo_positive = cfo >= 0.0
+    investing_positive = investing >= 0.0
+    financing_positive = financing >= 0.0
+
+    if (
+        cfo_positive
+        and not investing_positive
+        and not financing_positive
+    ):
+        return (
+            "Shareholder Returns"
+            if quality is not None and quality >= 1.0
+            else "Reinvestor"
+        )
+
+    if (
+        cfo_positive
+        and investing_positive
+        and not financing_positive
+    ):
+        return "Liquidating Assets"
+
+    if (
+        not cfo_positive
+        and investing_positive
+        and financing_positive
+    ):
+        return "Distress Signal"
+
+    if (
+        not cfo_positive
+        and not investing_positive
+        and financing_positive
+    ):
+        return "Growth Funded by Debt"
+
+    if cfo_positive and investing_positive and financing_positive:
+        return "Cash Accumulator"
+
+    if (
+        not cfo_positive
+        and not investing_positive
+        and not financing_positive
+    ):
+        return "Pre-Revenue"
+
+    return "Mixed"
+
+
+# END LEGACY CASH-FLOW KPI COMPATIBILITY HELPERS
+
+
 def main() -> None:
     """Command-line entry point."""
 
