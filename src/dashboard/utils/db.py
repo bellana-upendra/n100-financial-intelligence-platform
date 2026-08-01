@@ -1,434 +1,514 @@
-"""Cached SQLite query functions used by Streamlit pages."""
+"""Cached SQLite data-access layer for all Streamlit screens."""
 
 from __future__ import annotations
 
-import sqlite3
 from pathlib import Path
-from typing import Any
+import sqlite3
 
 import pandas as pd
 import streamlit as st
 
 from src.config import get_settings
 
-
-# ============================================================
-# DATABASE CONFIGURATION
-# ============================================================
-
 SETTINGS = get_settings()
 DATABASE_PATH = Path(SETTINGS.database_path)
 
 
-# ============================================================
-# INTERNAL HELPERS
-# ============================================================
-
-def _read_query(
-    query: str,
-    params: tuple[Any, ...] = (),
-) -> pd.DataFrame:
-    """Run a parameterised SQLite query and return a DataFrame."""
-
+def _read_query(query: str, params: tuple = ()) -> pd.DataFrame:
+    """Execute a parameterised query using a fresh SQLite connection."""
     if not DATABASE_PATH.exists():
-        raise FileNotFoundError(
-            f"Database not found: {DATABASE_PATH}"
-        )
-
+        raise FileNotFoundError(f"Database not found: {DATABASE_PATH}")
     with sqlite3.connect(DATABASE_PATH) as connection:
-        return pd.read_sql_query(
-            sql=query,
-            con=connection,
-            params=params,
-        )
+        connection.execute("PRAGMA foreign_keys = ON")
+        return pd.read_sql_query(query, connection, params=params)
 
 
-def _normalise_ticker(ticker: str) -> str:
-    """Return a clean uppercase company ticker."""
-
-    return ticker.strip().upper()
-
-
-# ============================================================
-# COMPANY QUERIES
-# ============================================================
-
-@st.cache_data(
-    ttl=600,
-    show_spinner=False,
-)
+@st.cache_data(ttl=600)
 def get_companies() -> pd.DataFrame:
-    """Return all companies and classification information."""
-
     return _read_query(
         """
         SELECT
-            company_id,
-            company_logo,
-            company_name,
-            chart_link,
-            about_company,
-            website,
-            nse_profile,
-            bse_profile,
-            face_value,
-            book_value,
-            roce_percentage,
-            roe_percentage,
-            broad_sector,
-            sub_sector,
-            index_weight_pct,
-            market_cap_category
-        FROM companies
-        ORDER BY company_name
+            c.company_id AS company_id,
+            c.company_name,
+            c.company_logo,
+            c.about_company,
+            c.website,
+            c.nse_profile,
+            c.bse_profile,
+            c.face_value,
+            c.book_value,
+            c.roce_percentage AS source_roce_percentage,
+            c.roe_percentage AS source_roe_percentage,
+            c.broad_sector,
+            c.sub_sector,
+            c.index_weight_pct,
+            c.market_cap_category
+        FROM companies c
+        ORDER BY c.company_name
         """
     )
 
 
-@st.cache_data(
-    ttl=600,
-    show_spinner=False,
-)
+@st.cache_data(ttl=600)
 def get_company(ticker: str) -> pd.DataFrame:
-    """Return one company using its ticker."""
-
     return _read_query(
         """
         SELECT
-            company_id,
-            company_logo,
-            company_name,
-            chart_link,
-            about_company,
-            website,
-            nse_profile,
-            bse_profile,
-            face_value,
-            book_value,
-            roce_percentage,
-            roe_percentage,
-            broad_sector,
-            sub_sector,
-            index_weight_pct,
-            market_cap_category
-        FROM companies
-        WHERE UPPER(TRIM(company_id)) = ?
-        LIMIT 1
+            c.company_id AS company_id,
+            c.company_name,
+            c.company_logo,
+            c.about_company,
+            c.website,
+            c.nse_profile,
+            c.bse_profile,
+            c.face_value,
+            c.book_value,
+            c.broad_sector,
+            c.sub_sector,
+            c.market_cap_category
+        FROM companies c
+        WHERE c.company_id = ?
         """,
-        (_normalise_ticker(ticker),),
+        (ticker.strip().upper(),),
     )
 
 
-# ============================================================
-# FINANCIAL RATIO QUERIES
-# ============================================================
-
-@st.cache_data(
-    ttl=600,
-    show_spinner=False,
-)
-def get_ratios(
-    ticker: str,
-    year: int | None = None,
-) -> pd.DataFrame:
-    """Return financial ratios for a company."""
-
-    company_id = _normalise_ticker(ticker)
-
+@st.cache_data(ttl=600)
+def get_ratios(ticker: str, year: int | None = None) -> pd.DataFrame:
+    ticker = ticker.strip().upper()
     if year is None:
         return _read_query(
             """
             SELECT *
             FROM financial_ratios
-            WHERE UPPER(TRIM(company_id)) = ?
-            ORDER BY year
+            WHERE company_id = ?
+            ORDER BY CAST(year AS INTEGER)
             """,
-            (company_id,),
+            (ticker,),
         )
-
     return _read_query(
         """
         SELECT *
         FROM financial_ratios
-        WHERE UPPER(TRIM(company_id)) = ?
-          AND CAST(year AS INTEGER) = ?
-        ORDER BY year
+        WHERE company_id = ? AND CAST(year AS INTEGER) = ?
+        ORDER BY id
         """,
-        (
-            company_id,
-            year,
-        ),
+        (ticker, int(year)),
     )
 
 
-# ============================================================
-# PROFIT AND LOSS QUERIES
-# ============================================================
-
-@st.cache_data(
-    ttl=600,
-    show_spinner=False,
-)
+@st.cache_data(ttl=600)
 def get_pl(ticker: str) -> pd.DataFrame:
-    """Return profit-and-loss history for a company."""
-
     return _read_query(
         """
-        SELECT *
-        FROM profitandloss
-        WHERE UPPER(TRIM(company_id)) = ?
-        ORDER BY year
+        SELECT * FROM profitandloss
+        WHERE company_id = ?
+        ORDER BY CAST(year AS INTEGER)
         """,
-        (_normalise_ticker(ticker),),
+        (ticker.strip().upper(),),
     )
 
 
-# ============================================================
-# BALANCE SHEET QUERIES
-# ============================================================
-
-@st.cache_data(
-    ttl=600,
-    show_spinner=False,
-)
+@st.cache_data(ttl=600)
 def get_bs(ticker: str) -> pd.DataFrame:
-    """Return balance-sheet history for a company."""
-
     return _read_query(
         """
-        SELECT *
-        FROM balancesheet
-        WHERE UPPER(TRIM(company_id)) = ?
-        ORDER BY year
+        SELECT * FROM balancesheet
+        WHERE company_id = ?
+        ORDER BY CAST(year AS INTEGER)
         """,
-        (_normalise_ticker(ticker),),
+        (ticker.strip().upper(),),
     )
 
 
-# ============================================================
-# CASH-FLOW QUERIES
-# ============================================================
-
-@st.cache_data(
-    ttl=600,
-    show_spinner=False,
-)
+@st.cache_data(ttl=600)
 def get_cf(ticker: str) -> pd.DataFrame:
-    """Return cash-flow history for a company."""
-
     return _read_query(
         """
-        SELECT *
-        FROM cashflow
-        WHERE UPPER(TRIM(company_id)) = ?
-        ORDER BY year
+        SELECT * FROM cashflow
+        WHERE company_id = ?
+        ORDER BY CAST(year AS INTEGER)
         """,
-        (_normalise_ticker(ticker),),
+        (ticker.strip().upper(),),
     )
 
 
-# ============================================================
-# PEER GROUP QUERIES
-# ============================================================
-
-@st.cache_data(
-    ttl=600,
-    show_spinner=False,
-)
-def get_peers(group_name: str) -> pd.DataFrame:
-    """Return companies belonging to a peer group."""
-
+@st.cache_data(ttl=600)
+def get_sectors() -> pd.DataFrame:
     return _read_query(
         """
         SELECT
-            pg.*,
-            c.company_name,
-            c.broad_sector,
-            c.sub_sector,
-            c.market_cap_category,
-            c.index_weight_pct
-        FROM peer_groups AS pg
-        LEFT JOIN companies AS c
-            ON UPPER(TRIM(pg.company_id))
-             = UPPER(TRIM(c.company_id))
-        WHERE TRIM(pg.peer_group_name) = ?
-        ORDER BY c.company_name
-        """,
-        (group_name.strip(),),
+	    company_id,
+	    broad_sector,
+	    sub_sector,
+	    index_weight_pct,
+	    market_cap_category
+	FROM companies
+        ORDER BY broad_sector, sub_sector, company_id
+        """
     )
 
 
-@st.cache_data(
-    ttl=600,
-    show_spinner=False,
-)
-def get_peer_group_names() -> pd.DataFrame:
-    """Return all available peer-group names."""
-
-    return _read_query(
+@st.cache_data(ttl=600)
+def get_peer_group_names() -> list[str]:
+    data = _read_query(
         """
-        SELECT DISTINCT
-            peer_group_name
+        SELECT DISTINCT peer_group_name
         FROM peer_groups
-        WHERE peer_group_name IS NOT NULL
-          AND TRIM(peer_group_name) <> ''
         ORDER BY peer_group_name
         """
     )
+    return data["peer_group_name"].dropna().tolist()
 
 
-# ============================================================
-# VALUATION QUERIES
-# ============================================================
+@st.cache_data(ttl=600)
+def get_peers(group_name: str) -> pd.DataFrame:
+    return _read_query(
+        """
+        SELECT pg.*, c.company_name
+        FROM peer_groups pg
+        LEFT JOIN companies c ON pg.company_id = c.company_id
+        WHERE pg.peer_group_name = ?
+        ORDER BY pg.is_benchmark DESC, c.company_name
+        """,
+        (group_name,),
+    )
 
-@st.cache_data(
-    ttl=600,
-    show_spinner=False,
-)
+
+@st.cache_data(ttl=600)
+def get_peer_years(group_name: str) -> list[int]:
+    data = _read_query(
+        """
+        SELECT DISTINCT CAST(r.year AS INTEGER) AS year
+        FROM financial_ratios r
+        JOIN peer_groups pg ON r.company_id = pg.company_id
+        WHERE pg.peer_group_name = ?
+        ORDER BY year DESC
+        """,
+        (group_name,),
+    )
+    return [int(v) for v in data["year"].dropna().tolist()]
+
+
+@st.cache_data(ttl=600)
+def get_peer_group_data(group_name: str, year: int | None = None) -> pd.DataFrame:
+    if year is None:
+        return _read_query(
+            """
+            WITH ranked AS (
+                SELECT r.*,
+                       ROW_NUMBER() OVER (
+                           PARTITION BY r.company_id
+                           ORDER BY CAST(r.year AS INTEGER) DESC, r.id DESC
+                       ) AS rn
+                FROM financial_ratios r
+            )
+            SELECT
+                pg.peer_group_name,
+                pg.company_id,
+                pg.is_benchmark,
+                c.company_name,
+                CAST(ranked.year AS INTEGER) AS financial_year,
+                ranked.return_on_equity_pct,
+                ranked.return_on_capital_employed_pct,
+                ranked.net_profit_margin_pct,
+                ranked.debt_to_equity,
+                ranked.free_cash_flow_cr,
+                ranked.pat_cagr_5yr,
+                ranked.revenue_cagr_5yr,
+                ranked.eps_cagr_5yr,
+                ranked.interest_coverage,
+                ranked.asset_turnover,
+                ranked.composite_quality_score
+            FROM peer_groups pg
+            JOIN companies c ON pg.company_id = c.company_id
+            LEFT JOIN ranked ON pg.company_id = ranked.company_id AND ranked.rn = 1
+            WHERE pg.peer_group_name = ?
+            ORDER BY pg.is_benchmark DESC, c.company_name
+            """,
+            (group_name,),
+        )
+    return _read_query(
+        """
+        WITH ratios AS (
+            SELECT *
+            FROM financial_ratios
+            WHERE CAST(year AS INTEGER) = ?
+        )
+        SELECT
+            pg.peer_group_name,
+            pg.company_id,
+            pg.is_benchmark,
+            c.company_name,
+            CAST(ratios.year AS INTEGER) AS financial_year,
+            ratios.return_on_equity_pct,
+            ratios.return_on_capital_employed_pct,
+            ratios.net_profit_margin_pct,
+            ratios.debt_to_equity,
+            ratios.free_cash_flow_cr,
+            ratios.pat_cagr_5yr,
+            ratios.revenue_cagr_5yr,
+            ratios.eps_cagr_5yr,
+            ratios.interest_coverage,
+            ratios.asset_turnover,
+            ratios.composite_quality_score
+        FROM peer_groups pg
+        JOIN companies c ON pg.company_id = c.company_id
+        LEFT JOIN ratios ON pg.company_id = ratios.company_id
+        WHERE pg.peer_group_name = ?
+        ORDER BY pg.is_benchmark DESC, c.company_name
+        """,
+        (int(year), group_name),
+    )
+
+
+@st.cache_data(ttl=600)
 def get_valuation(ticker: str) -> pd.DataFrame:
-    """Return market-cap and valuation history for a company."""
-
     return _read_query(
         """
         SELECT
             m.*,
             c.company_name,
             c.broad_sector,
-            c.sub_sector,
-            c.market_cap_category,
-            c.index_weight_pct
-        FROM market_cap AS m
-        LEFT JOIN companies AS c
-            ON UPPER(TRIM(m.company_id))
-             = UPPER(TRIM(c.company_id))
-        WHERE UPPER(TRIM(m.company_id)) = ?
-        ORDER BY m.year
+            c.sub_sector
+        FROM market_cap m
+        LEFT JOIN companies c ON m.company_id = c.company_id
+        WHERE m.company_id = ?
+        ORDER BY CAST(m.year AS INTEGER)
         """,
-        (_normalise_ticker(ticker),),
+        (ticker.strip().upper(),),
     )
 
 
-# ============================================================
-# ANNUAL REPORT QUERIES
-# ============================================================
-
-@st.cache_data(
-    ttl=600,
-    show_spinner=False,
-)
-def get_annual_reports(
-    ticker: str | None = None,
-    year: int | None = None,
-) -> pd.DataFrame:
-    """Return available annual-report links."""
-
-    query = """
-        SELECT
-            UPPER(TRIM(d.company_id)) AS company_id,
-            c.company_name,
-            CAST(d.year AS INTEGER) AS year,
-            TRIM(d.annual_report) AS annual_report
-        FROM documents AS d
-        INNER JOIN companies AS c
-            ON UPPER(TRIM(d.company_id))
-             = UPPER(TRIM(c.company_id))
-        WHERE d.annual_report IS NOT NULL
-          AND TRIM(d.annual_report) <> ''
-          AND LOWER(TRIM(d.annual_report)) NOT IN (
-              'null',
-              'none',
-              'nan',
-              'na',
-              'n/a',
-              '-'
-          )
-    """
-
-    params: list[Any] = []
-
-    if ticker:
-        query += """
-          AND UPPER(TRIM(d.company_id)) = ?
-        """
-        params.append(_normalise_ticker(ticker))
-
-    if year is not None:
-        query += """
-          AND CAST(d.year AS INTEGER) = ?
-        """
-        params.append(year)
-
-    query += """
-        ORDER BY
-            c.company_name,
-            CAST(d.year AS INTEGER) DESC
-    """
-
+@st.cache_data(ttl=600)
+def get_home_data(year: int) -> pd.DataFrame:
     return _read_query(
-        query,
-        tuple(params),
+        """
+        WITH ratios AS (
+            SELECT
+                company_id,
+                CAST(year AS INTEGER) AS year,
+                AVG(return_on_equity_pct) AS return_on_equity_pct,
+                AVG(debt_to_equity) AS debt_to_equity,
+                AVG(revenue_cagr_5yr) AS revenue_cagr_5yr,
+                AVG(composite_quality_score) AS composite_quality_score
+            FROM financial_ratios
+            WHERE CAST(year AS INTEGER) = ?
+            GROUP BY company_id, CAST(year AS INTEGER)
+        ), market AS (
+            SELECT * FROM market_cap WHERE CAST(year AS INTEGER) = ?
+        )
+        SELECT
+            c.company_id AS company_id,
+            c.company_name,
+            c.broad_sector,
+            c.sub_sector,
+            ratios.return_on_equity_pct,
+            ratios.debt_to_equity,
+            ratios.revenue_cagr_5yr,
+            ratios.composite_quality_score,
+            market.pe_ratio,
+            market.pb_ratio,
+            market.dividend_yield_pct,
+            market.market_cap_crore
+        FROM companies c
+        LEFT JOIN ratios ON c.company_id = ratios.company_id
+        LEFT JOIN market ON c.company_id = market.company_id
+        ORDER BY c.company_name
+        """,
+        (int(year), int(year)),
     )
 
 
-# ============================================================
-# SECTOR QUERIES
-# ============================================================
-
-@st.cache_data(
-    ttl=600,
-    show_spinner=False,
-)
-def get_sector_summary() -> pd.DataFrame:
-    """Return company counts and total weights by broad sector."""
-
+@st.cache_data(ttl=600)
+def get_screener_data() -> pd.DataFrame:
     return _read_query(
         """
+        WITH latest_ratio AS (
+            SELECT * FROM (
+                SELECT r.*,
+                       ROW_NUMBER() OVER (
+                           PARTITION BY r.company_id
+                           ORDER BY CAST(r.year AS INTEGER) DESC, r.id DESC
+                       ) AS rn
+                FROM financial_ratios r
+            ) WHERE rn = 1
+        ), latest_market AS (
+            SELECT * FROM (
+                SELECT m.*,
+                       ROW_NUMBER() OVER (
+                           PARTITION BY m.company_id
+                           ORDER BY CAST(m.year AS INTEGER) DESC, m.id DESC
+                       ) AS rn
+                FROM market_cap m
+            ) WHERE rn = 1
+        )
         SELECT
-            broad_sector,
-            COUNT(*) AS company_count,
-            SUM(COALESCE(index_weight_pct, 0)) AS total_index_weight_pct
+            c.company_id AS company_id,
+            c.company_name,
+            c.broad_sector,
+            c.sub_sector,
+            latest_ratio.year,
+            latest_ratio.return_on_equity_pct,
+            latest_ratio.return_on_capital_employed_pct,
+            latest_ratio.net_profit_margin_pct,
+            latest_ratio.debt_to_equity,
+            latest_ratio.free_cash_flow_cr,
+            latest_ratio.revenue_cagr_5yr,
+            latest_ratio.pat_cagr_5yr,
+            latest_ratio.operating_profit_margin_pct,
+            latest_ratio.interest_coverage,
+            latest_ratio.icr_label,
+            latest_ratio.composite_quality_score,
+            latest_ratio.dividend_payout_ratio_pct,
+            latest_ratio.capital_allocation_pattern,
+            latest_market.pe_ratio,
+            latest_market.pb_ratio,
+            latest_market.ev_ebitda,
+            latest_market.dividend_yield_pct,
+            latest_market.market_cap_crore
+        FROM companies c
+        LEFT JOIN latest_ratio ON c.company_id = latest_ratio.company_id
+        LEFT JOIN latest_market ON c.company_id = latest_market.company_id
+        ORDER BY c.company_name
+        """
+    )
+
+
+@st.cache_data(ttl=600)
+def get_pros_cons(ticker: str) -> pd.DataFrame:
+    return _read_query(
+        """
+        SELECT pros, cons
+        FROM prosandcons
+        WHERE company_id = ?
+        ORDER BY id
+        """,
+        (ticker.strip().upper(),),
+    )
+
+
+@st.cache_data(ttl=600)
+def get_documents(ticker: str) -> pd.DataFrame:
+    return _read_query(
+        """
+        SELECT id, company_id, Year AS report_year, Annual_Report AS report_url
+        FROM documents
+        WHERE company_id = ?
+        ORDER BY Year DESC
+        """,
+        (ticker.strip().upper(),),
+    )
+
+
+@st.cache_data(ttl=600)
+def get_sector_names() -> list[str]:
+    data = _read_query(
+        """
+        SELECT DISTINCT broad_sector
         FROM companies
         WHERE broad_sector IS NOT NULL
           AND TRIM(broad_sector) <> ''
-        GROUP BY broad_sector
-        ORDER BY total_index_weight_pct DESC
+        ORDER BY broad_sector
         """
     )
+    return data["broad_sector"].tolist()
 
 
-@st.cache_data(
-    ttl=600,
-    show_spinner=False,
-)
-def get_sector_companies(
-    broad_sector: str,
-) -> pd.DataFrame:
-    """Return companies belonging to a broad sector."""
-
+@st.cache_data(ttl=600)
+def get_sector_data(sector: str, year: int) -> pd.DataFrame:
     return _read_query(
         """
+        WITH ratios AS (
+            SELECT
+                company_id,
+                CAST(year AS INTEGER) AS year,
+                AVG(return_on_equity_pct) AS return_on_equity_pct,
+                AVG(return_on_capital_employed_pct) AS return_on_capital_employed_pct,
+                AVG(net_profit_margin_pct) AS net_profit_margin_pct,
+                AVG(debt_to_equity) AS debt_to_equity,
+                AVG(revenue_cagr_5yr) AS revenue_cagr_5yr,
+                AVG(pat_cagr_5yr) AS pat_cagr_5yr,
+                AVG(free_cash_flow_cr) AS free_cash_flow_cr
+            FROM financial_ratios
+            WHERE CAST(year AS INTEGER) = ?
+            GROUP BY company_id, CAST(year AS INTEGER)
+        ), pl AS (
+            SELECT company_id, CAST(year AS INTEGER) AS year, AVG(sales) AS sales
+            FROM profitandloss
+            WHERE CAST(year AS INTEGER) = ?
+            GROUP BY company_id, CAST(year AS INTEGER)
+        ), market AS (
+            SELECT * FROM market_cap WHERE CAST(year AS INTEGER) = ?
+        )
         SELECT
-            company_id,
-            company_name,
-            broad_sector,
-            sub_sector,
-            index_weight_pct,
-            market_cap_category,
-            roce_percentage,
-            roe_percentage
-        FROM companies
-        WHERE TRIM(broad_sector) = ?
-        ORDER BY index_weight_pct DESC, company_name
+            c.company_id AS company_id,
+            c.company_name,
+            c.broad_sector,
+            c.sub_sector,
+            pl.sales,
+            ratios.return_on_equity_pct,
+            ratios.return_on_capital_employed_pct,
+            ratios.net_profit_margin_pct,
+            ratios.debt_to_equity,
+            ratios.revenue_cagr_5yr,
+            ratios.pat_cagr_5yr,
+            ratios.free_cash_flow_cr,
+            market.market_cap_crore,
+            market.pe_ratio,
+            market.pb_ratio,
+            market.ev_ebitda,
+            market.dividend_yield_pct
+        FROM companies c
+        LEFT JOIN ratios ON c.company_id = ratios.company_id
+        LEFT JOIN pl ON c.company_id = pl.company_id
+        LEFT JOIN market ON c.company_id = market.company_id
+        WHERE c.broad_sector = ?
+        ORDER BY c.company_name
         """,
-        (broad_sector.strip(),),
+        (int(year), int(year), int(year), sector),
     )
 
 
-# ============================================================
-# CACHE CONTROL
-# ============================================================
-
-def clear_dashboard_cache() -> None:
-    """Clear cached dashboard query results."""
-
-    st.cache_data.clear()
+@st.cache_data(ttl=600)
+def get_capital_allocation_data() -> pd.DataFrame:
+    return _read_query(
+        """
+        WITH latest_ratio AS (
+            SELECT * FROM (
+                SELECT r.*,
+                       ROW_NUMBER() OVER (
+                           PARTITION BY r.company_id
+                           ORDER BY CAST(r.year AS INTEGER) DESC, r.id DESC
+                       ) AS rn
+                FROM financial_ratios r
+            ) WHERE rn = 1
+        ), latest_market AS (
+            SELECT * FROM (
+                SELECT m.*,
+                       ROW_NUMBER() OVER (
+                           PARTITION BY m.company_id
+                           ORDER BY CAST(m.year AS INTEGER) DESC, m.id DESC
+                       ) AS rn
+                FROM market_cap m
+            ) WHERE rn = 1
+        )
+        SELECT
+            c.company_id AS company_id,
+            c.company_name,
+            c.broad_sector,
+            c.sub_sector,
+            latest_ratio.year,
+            latest_ratio.cfo_sign,
+            latest_ratio.cfi_sign,
+            latest_ratio.cff_sign,
+            latest_ratio.capital_allocation_pattern,
+            latest_ratio.free_cash_flow_cr,
+            latest_ratio.cfo_quality_label,
+            latest_market.market_cap_crore
+        FROM companies c
+        LEFT JOIN latest_ratio ON c.company_id = latest_ratio.company_id
+        LEFT JOIN latest_market ON c.company_id = latest_market.company_id
+        ORDER BY c.company_name
+        """
+    )

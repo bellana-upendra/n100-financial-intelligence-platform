@@ -51,3 +51,24 @@ Thumbs.db
 *.db-journal
 *.db-wal
 *.db-shm
+
+
+# Extracted original dataset
+_original_source/
+
+# Downloaded annual-report repository
+reports/annual_reports/
+
+# Temporary repair and backup files
+fix_*_schema.py
+fix_remaining_dashboard_queries.py
+*.bak_*
+*.before_*
+*.backup
+
+# Python generated files
+__pycache__/
+*.pyc
+
+# Local Streamlit configuration
+.streamlit/secrets.toml

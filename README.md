@@ -224,3 +224,42 @@ notebooks/exploratory_queries.sql
 ### Status
 
 Sprint 2 technical implementation completed and submitted for review.
+<!-- SPRINT4_DASHBOARD_START -->
+## Sprint 4 — Streamlit Dashboard and Valuation
+
+### Run the dashboard
+
+```bash
+set PYTHONPATH=%CD%
+python -m streamlit run src/dashboard/app.py
+```
+
+The application opens at `http://localhost:8501`.
+
+### Dashboard screens
+
+1. **Home / Overview** — six market KPIs, sector donut chart and top-five quality companies.
+2. **Company Profile** — company card, six KPIs, ten-year charts, pros and cons.
+3. **Financial Screener** — ten sliders, six presets, live results and CSV export.
+4. **Peer Comparison** — selected company versus peer-average radar and KPI table.
+5. **Trend Analysis** — up to three overlaid metrics with YoY annotations.
+6. **Sector Analysis** — revenue/ROE bubble chart and sector median KPIs.
+7. **Capital Allocation Map** — treemap grouped by capital-allocation pattern.
+8. **Annual Reports** — BSE PDF links with cached availability checks.
+
+### Generate valuation outputs
+
+```bash
+set PYTHONPATH=%CD%
+python -m src.analytics.valuation
+```
+
+Outputs:
+
+- `output/valuation_summary.xlsx` — 92 companies with valuation multiples, FCF yield and flags.
+- `output/valuation_flags.csv` — only Caution and Discount companies.
+
+### Data coverage note
+
+The validated database contains 92 companies and 1,073 financial-ratio records. The record count is below the original 1,100 target because some source company-year combinations are unavailable; no artificial rows are created.
+<!-- SPRINT4_DASHBOARD_END -->
