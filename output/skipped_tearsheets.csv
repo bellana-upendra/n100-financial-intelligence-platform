@@ -1,0 +1,2 @@
+company_id,ticker,company_name,available_years,skip_reason
+JIOFIN,JIOFIN,Jio Financial Services Ltd,2,Insufficient financial history: 2 year(s) available; minimum is 3.

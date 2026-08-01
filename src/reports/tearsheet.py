@@ -10,7 +10,7 @@ Generate the five required test companies:
 
 Default PDF location:
 
-    output/tearsheets/<TICKER>_tearsheet.pdf
+    reports/tearsheets/<TICKER>_tearsheet.pdf
 
 The report is created with a fixed two-page ReportLab canvas, so content
 cannot accidentally flow onto a third page. Long pros and cons are rendered
@@ -66,8 +66,13 @@ def resolve_project_path(value: object) -> Path:
 DATABASE_PATH = resolve_project_path(SETTINGS.database_path)
 OUTPUT_DIR = resolve_project_path(SETTINGS.output_dir)
 
-TEARSHEET_DIR = OUTPUT_DIR / "tearsheets"
+REPORTS_DIR = PROJECT_ROOT / "reports"
+TEARSHEET_DIR = REPORTS_DIR / "tearsheets"
 TEMP_CHART_DIR = OUTPUT_DIR / "temp_charts"
+SKIPPED_TEARSHEETS_PATH = OUTPUT_DIR / "skipped_tearsheets.csv"
+
+MINIMUM_HISTORY_YEARS = 3
+MINIMUM_PDF_BYTES = 30 * 1024
 
 CASHFLOW_INTELLIGENCE_PATH = OUTPUT_DIR / "cashflow_intelligence.xlsx"
 PROS_CONS_PATH = OUTPUT_DIR / "pros_cons_generated.csv"
@@ -2999,6 +3004,7 @@ def generate_tearsheet(
     ticker: str,
     output_path: Path | None = None,
     keep_temp: bool = False,
+    prepared_data: TearsheetData | None = None,
 ) -> Path:
     """Generate and validate one two-page company tearsheet."""
 
@@ -3009,9 +3015,17 @@ def generate_tearsheet(
             "Ticker cannot be blank."
         )
 
-    data = assemble_tearsheet_data(
-        ticker
+    data = (
+        prepared_data
+        if prepared_data is not None
+        else assemble_tearsheet_data(ticker)
     )
+
+    if data.company.company_id != ticker:
+        raise ValueError(
+            "Prepared tearsheet data does not match "
+            f"the requested ticker {ticker}."
+        )
 
     TEARSHEET_DIR.mkdir(
         parents=True,
@@ -3079,6 +3093,14 @@ def generate_tearsheet(
             expected_pages=2,
         )
 
+        pdf_size = pdf_path.stat().st_size
+
+        if pdf_size < MINIMUM_PDF_BYTES:
+            raise RuntimeError(
+                f"Generated PDF is only {pdf_size:,} bytes; "
+                f"minimum required size is {MINIMUM_PDF_BYTES:,} bytes."
+            )
+
         successful = True
 
         print()
@@ -3091,6 +3113,7 @@ def generate_tearsheet(
         print(f"Cons included:           {min(len(data.cons), 5)}")
         print(f"Capital allocation:      {data.capital_allocation_label}")
         print(f"PDF pages:               {page_count}")
+        print(f"PDF size:                {pdf_size:,} bytes")
         print(f"PDF output:              {pdf_path}")
 
         return pdf_path
@@ -3117,6 +3140,278 @@ def generate_tearsheet(
                 pass
 
 
+
+def load_company_directory() -> pd.DataFrame:
+    """Load the complete company directory used by the batch generator."""
+
+    if not DATABASE_PATH.exists():
+        raise FileNotFoundError(
+            f"Configured database was not found: {DATABASE_PATH}"
+        )
+
+    with sqlite3.connect(DATABASE_PATH) as connection:
+        companies = read_table(
+            connection,
+            "companies",
+        )
+
+    if companies.empty:
+        raise RuntimeError(
+            "The companies table is missing or empty."
+        )
+
+    company_column = first_existing_column(
+        companies.columns,
+        (
+            "company_id",
+            "ticker",
+            "symbol",
+        ),
+    )
+    name_column = first_existing_column(
+        companies.columns,
+        (
+            "company_name",
+            "name",
+            "company",
+        ),
+    )
+
+    if company_column is None:
+        raise RuntimeError(
+            "The companies table has no company identifier."
+        )
+
+    directory = pd.DataFrame(
+        {
+            "company_id": companies[company_column].map(
+                normalise_company_id
+            ),
+            "company_name": (
+                clean_nullable_text(
+                    companies[name_column]
+                )
+                if name_column is not None
+                else pd.Series(
+                    pd.NA,
+                    index=companies.index,
+                    dtype="string",
+                )
+            ),
+        }
+    )
+
+    directory = directory[
+        directory["company_id"] != ""
+    ].copy()
+
+    directory["company_name"] = directory[
+        "company_name"
+    ].fillna(
+        directory["company_id"]
+    )
+
+    return directory.drop_duplicates(
+        "company_id",
+        keep="last",
+    ).sort_values(
+        "company_id",
+        kind="stable",
+    ).reset_index(drop=True)
+
+
+def clear_existing_tearsheets() -> int:
+    """Remove stale generated tearsheets before a full batch run."""
+
+    TEARSHEET_DIR.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
+    removed = 0
+
+    for pdf_path in TEARSHEET_DIR.glob(
+        "*_tearsheet.pdf"
+    ):
+        pdf_path.unlink()
+        removed += 1
+
+    return removed
+
+
+def generate_all_tearsheets(
+    keep_temp: bool = False,
+) -> tuple[int, pd.DataFrame]:
+    """Generate all eligible company tearsheets and record skipped companies."""
+
+    company_directory = load_company_directory()
+    removed = clear_existing_tearsheets()
+
+    skipped_rows: list[dict[str, object]] = []
+    failures: list[str] = []
+    generated = 0
+
+    print("Company tearsheet batch")
+    print("=" * 60)
+    print(f"Companies found:          {len(company_directory)}")
+    print(f"Stale PDFs removed:       {removed}")
+    print(f"Minimum history years:    {MINIMUM_HISTORY_YEARS}")
+    print(f"Minimum PDF size:         {MINIMUM_PDF_BYTES:,} bytes")
+
+    for position, company_row in enumerate(
+        company_directory.itertuples(index=False),
+        start=1,
+    ):
+        ticker = normalise_company_id(
+            company_row.company_id
+        )
+        company_name = str(
+            company_row.company_name
+        ).strip() or ticker
+
+        print()
+        print(
+            f"[{position}/{len(company_directory)}] "
+            f"{ticker} - {company_name}"
+        )
+
+        try:
+            data = assemble_tearsheet_data(
+                ticker
+            )
+
+            available_years = int(
+                data.history["financial_year"]
+                .dropna()
+                .nunique()
+            )
+
+            if available_years < MINIMUM_HISTORY_YEARS:
+                skipped_rows.append(
+                    {
+                        "company_id": ticker,
+                        "ticker": ticker,
+                        "company_name": company_name,
+                        "available_years": available_years,
+                        "skip_reason": (
+                            "Insufficient financial history: "
+                            f"{available_years} year(s) available; "
+                            f"minimum is {MINIMUM_HISTORY_YEARS}."
+                        ),
+                    }
+                )
+
+                print(
+                    "SKIPPED: insufficient financial history "
+                    f"({available_years} year(s))."
+                )
+                continue
+
+            pdf_path = generate_tearsheet(
+                ticker,
+                keep_temp=keep_temp,
+                prepared_data=data,
+            )
+
+            if pdf_path.stat().st_size < MINIMUM_PDF_BYTES:
+                raise RuntimeError(
+                    "PDF failed the 30 KB minimum-size check."
+                )
+
+            generated += 1
+
+        except Exception as exc:
+            failures.append(
+                f"{ticker}: {exc}"
+            )
+            print(
+                f"ERROR: {ticker}: {exc}"
+            )
+
+    skipped = pd.DataFrame(
+        skipped_rows,
+        columns=[
+            "company_id",
+            "ticker",
+            "company_name",
+            "available_years",
+            "skip_reason",
+        ],
+    )
+
+    SKIPPED_TEARSHEETS_PATH.parent.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+    skipped.to_csv(
+        SKIPPED_TEARSHEETS_PATH,
+        index=False,
+    )
+
+    expected_generated = (
+        len(company_directory) - len(skipped)
+    )
+    actual_pdf_count = len(
+        list(
+            TEARSHEET_DIR.glob(
+                "*_tearsheet.pdf"
+            )
+        )
+    )
+
+    print()
+    print("Company tearsheet batch summary")
+    print("=" * 60)
+    print(f"Companies found:          {len(company_directory)}")
+    print(f"Generated:                {generated}")
+    print(f"Skipped:                  {len(skipped)}")
+    print(f"Expected PDFs:            {expected_generated}")
+    print(f"Actual PDFs:              {actual_pdf_count}")
+    print(f"Skipped output:           {SKIPPED_TEARSHEETS_PATH}")
+    print(f"Tearsheet directory:      {TEARSHEET_DIR}")
+
+    if failures:
+        raise RuntimeError(
+            "One or more company tearsheets failed:\n"
+            + "\n".join(failures)
+        )
+
+    if generated != expected_generated:
+        raise RuntimeError(
+            "Generated count does not equal company count minus skips: "
+            f"generated={generated}, expected={expected_generated}."
+        )
+
+    if actual_pdf_count != expected_generated:
+        raise RuntimeError(
+            "Tearsheet directory count failed: "
+            f"actual={actual_pdf_count}, expected={expected_generated}."
+        )
+
+    small_pdfs = [
+        path
+        for path in TEARSHEET_DIR.glob(
+            "*_tearsheet.pdf"
+        )
+        if path.stat().st_size < MINIMUM_PDF_BYTES
+    ]
+
+    if small_pdfs:
+        raise RuntimeError(
+            "Generated tearsheets below 30 KB:\n"
+            + "\n".join(
+                f"{path.name}: {path.stat().st_size:,} bytes"
+                for path in small_pdfs
+            )
+        )
+
+    print(
+        "Batch validation: PASS - all eligible tearsheets "
+        "exist and are at least 30 KB."
+    )
+
+    return generated, skipped
+
 def parse_arguments() -> argparse.Namespace:
     """Parse command-line arguments."""
 
@@ -3140,6 +3435,14 @@ def parse_arguments() -> argparse.Namespace:
         help=(
             "Generate TCS, HDFCBANK, RELIANCE, "
             "SUNPHARMA and TATASTEEL."
+        ),
+    )
+    group.add_argument(
+        "--all",
+        action="store_true",
+        help=(
+            "Generate all eligible company tearsheets and "
+            "write output/skipped_tearsheets.csv."
         ),
     )
 
@@ -3167,6 +3470,17 @@ def main() -> None:
     """Command-line entry point."""
 
     args = parse_arguments()
+
+    if args.all:
+        if args.output is not None:
+            raise SystemExit(
+                "--output cannot be combined with --all."
+            )
+
+        generate_all_tearsheets(
+            keep_temp=args.keep_temp,
+        )
+        return
 
     if args.test_five:
         if args.output is not None:
