@@ -1,0 +1,14 @@
+company_id,ticker,company_name,cfo_value,cff_value,latest_net_profit
+AXISBANK,AXISBANK,Axis Bank Ltd,-5555.0,22341.0,24861.0
+BAJAJFINSV,BAJAJFINSV,Bajaj Finserv Ltd,-68674.0,82709.0,15595.0
+BAJFINANCE,BAJFINANCE,Bajaj Finance Ltd,-72760.0,82415.0,14451.0
+BANKBARODA,BANKBARODA,Bank of Baroda,-6274.0,5476.0,18869.0
+BHEL,BHEL,Bharat Heavy Electricals Limited,-3713.0,2656.0,282.0
+CHOLAFIN,CHOLAFIN,Cholamandalam Investment & Finance Company Ltd,-35683.0,38471.0,3420.0
+GRASIM,GRASIM,Grasim Industries Ltd,-10719.0,33908.0,9926.0
+M&M,M&M,Mahindra & Mahindra Ltd,-5630.0,12281.0,12270.0
+PFC,PFC,Power Finance Corporation Ltd,-97820.0,101261.0,26461.0
+PNB,PNB,Punjab National Bank,-27939.0,3518.0,9157.0
+RECLTD,RECLTD,REC Ltd,-57723.0,59588.0,14145.0
+SHRIRAMFIN,SHRIRAMFIN,Shriram Finance Ltd,-31101.0,27609.0,7399.0
+TVSMOTOR,TVSMOTOR,TVS Motor Company Ltd,-1253.0,2759.0,1779.0
